@@ -23,10 +23,11 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-video rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/about.jpg"
                 alt="NAHORagri Headquarters"
-                fill
-                className="object-cover"
+                width={1200}
+                height={675}
+                className="object-cover w-full h-full"
               />
             </div>
           </div>
@@ -61,7 +62,7 @@ export default function AboutPage() {
             </div>
             <div className="order-1 md:order-2 relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=600&width=600"
+                src="/vision.jpg?height=600&width=600"
                 alt="Ethiopian Coffee Farm"
                 fill
                 className="object-cover"

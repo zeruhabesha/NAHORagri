@@ -65,7 +65,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/coffee.jpg?height=600&width=800"
                     alt="Ethiopian Coffee Beans"
                     fill
                     className="object-cover"
@@ -198,7 +198,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/seeds.jpg?height=600&width=800"
                     alt="Ethiopian Sesame Seeds"
                     fill
                     className="object-cover"
@@ -275,7 +275,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/avocado.jpg?height=600&width=800"
                     alt="Ethiopian Avocados"
                     fill
                     className="object-cover"
@@ -390,7 +390,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/engineering.jpg?height=600&width=800"
                     alt="Engineering Solutions"
                     fill
                     className="object-cover"

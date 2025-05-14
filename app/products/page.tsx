@@ -132,7 +132,7 @@ export default function ProductsPage() {
                 </Card>
               </div>
 
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>Pricing (USD/lb)</CardTitle>
                   <CardDescription>Current pricing for our coffee varieties</CardDescription>
@@ -180,7 +180,7 @@ export default function ProductsPage() {
                     </TableBody>
                   </Table>
                 </CardContent>
-              </Card>
+              </Card> */}
             </TabsContent>
 
             {/* Sesame Tab */}
@@ -642,7 +642,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Payment Terms */}
-      <section className="py-16 md:py-24">
+      {/* <section className="py-16 md:py-24">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Payment Terms</h2>
@@ -676,7 +676,7 @@ export default function ProductsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">

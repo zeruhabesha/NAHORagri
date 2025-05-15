@@ -15,8 +15,8 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="NAHORagri Logo" width={40} height={40} />
-            <span className="hidden font-bold sm:inline-block text-xl">NAHORagri</span>
+            <Image src="/logo.png" alt="NAHORagri Logo" width={100} height={80} />
+            {/* <span className="hidden font-bold sm:inline-block text-xl">NAHORagri</span> */}
           </Link>
         </div>
 

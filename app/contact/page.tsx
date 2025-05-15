@@ -150,107 +150,11 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Get in Touch</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">Contact Our Team</h2>
               <p className="text-muted-foreground mb-8">
-                Fill out the form below, and our team will get back to you as soon as possible. We look forward to
-                hearing from you and discussing how we can meet your needs.
+                For all inquiries, please use the contact information or map below. We look forward to hearing from you!
               </p>
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Full Name</Label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="company">Company Name</Label>
-                    <Input id="company" name="company" value={formData.company} onChange={handleChange} />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="country">Country</Label>
-                  <Select value={formData.country} onValueChange={(value) => handleSelectChange("country", value)}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select your country" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="us">United States</SelectItem>
-                      <SelectItem value="uk">United Kingdom</SelectItem>
-                      <SelectItem value="germany">Germany</SelectItem>
-                      <SelectItem value="france">France</SelectItem>
-                      <SelectItem value="japan">Japan</SelectItem>
-                      <SelectItem value="china">China</SelectItem>
-                      <SelectItem value="uae">UAE</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <div className="space-y-2">
-                  <Label>I'm interested in</Label>
-                  <RadioGroup
-                    defaultValue="coffee"
-                    value={formData.interest}
-                    onValueChange={(value) => handleSelectChange("interest", value)}
-                    className="grid grid-cols-1 md:grid-cols-2 gap-2"
-                  >
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="coffee" id="coffee" />
-                      <Label htmlFor="coffee">Coffee Exports</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="sesame" id="sesame" />
-                      <Label htmlFor="sesame">Sesame Seeds</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="avocado" id="avocado" />
-                      <Label htmlFor="avocado">Avocado Products</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="engineering" id="engineering" />
-                      <Label htmlFor="engineering">Engineering Solutions</Label>
-                    </div>
-                  </RadioGroup>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Tell us about your requirements"
-                    required
-                  />
-                </div>
-
-                <Button type="submit" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </Button>
-              </form>
             </div>
-
             <div className="rounded-lg overflow-hidden h-[500px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126766.39636748288!2d38.6440633!3d9.0119816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1715613791000!5m2!1sen!2sus"

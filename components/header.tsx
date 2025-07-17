@@ -6,9 +6,14 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
+import { useTranslations } from "next-intl";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useParams } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { locale } = useParams(); // get current locale
+  const t = useTranslations();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -21,24 +26,19 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
-            Home
-          </Link>
-          <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
-            About Us
-          </Link>
-          <Link href="/products" className="text-sm font-medium transition-colors hover:text-primary">
-            Products & Services
-          </Link>
-          <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
-            Contact
-          </Link>
+          <Link href={`/${locale}`}>{t("home")}</Link>
+          <Link href={`/${locale}/about`}>{t("aboutUs")}</Link>
+          <Link href={`/${locale}/products`}>{t("products")}</Link>
+          <Link href={`/${locale}/contact`}>{t("contact")}</Link>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
+          <div className="hidden md:flex">
+            <LanguageSwitcher />
+          </div>
           <ModeToggle />
           <Button asChild className="hidden md:flex">
-            <Link href="/contact">Get a Quote</Link>
+            <Link href="/contact">{t("getAQuote")}</Link>
           </Button>
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -51,36 +51,39 @@ export default function Header() {
         <div className="md:hidden">
           <div className="container py-4 flex flex-col space-y-4">
             <Link
-              href="/"
+              href={`/${locale}`}
               className="text-sm font-medium transition-colors hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              Home
+              {t("home")}
             </Link>
             <Link
-              href="/about"
+              href={`/${locale}/about`}
               className="text-sm font-medium transition-colors hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              About Us
+              {t("aboutUs")}
             </Link>
             <Link
-              href="/products"
+              href={`/${locale}/products`}
               className="text-sm font-medium transition-colors hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              Products & Services
+              {t("products")}
             </Link>
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="text-sm font-medium transition-colors hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              {t("contact")}
             </Link>
+            <div className="pt-2 border-t">
+              <LanguageSwitcher />
+            </div>
             <Button asChild>
               <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                Get a Quote
+                {t("getAQuote")}
               </Link>
             </Button>
           </div>

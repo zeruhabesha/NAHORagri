@@ -12,7 +12,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
-import { sendEmail, type FormData } from "@/app/actions/send-email"
+import { sendEmail, type FormData } from "@/app/[locale]/actions/send-email"
+import { useTranslations } from "next-intl"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -26,6 +27,7 @@ export default function ContactPage() {
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const t = useTranslations()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -83,10 +85,9 @@ export default function ContactPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6">{t("contact")}</h1>
             <p className="text-lg text-muted-foreground">
-              Get in touch with our team to discuss your specific requirements and discover how NAHORagri can meet your
-              needs.
+              {t("getInTouchWithTeam")}
             </p>
           </div>
         </div>
@@ -100,12 +101,12 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <MapPin className="mr-2 h-5 w-5 text-primary" />
-                  Office Address
+                  {t("officeAddress")}
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  AB Zone Business Centre, House No. F7-108,
+                  Urael, AB Zone Business Centre, House No. F7-108,
                   <br />
                   Addis Ababa, Ethiopia
                 </p>
@@ -116,7 +117,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Phone className="mr-2 h-5 w-5 text-primary" />
-                  Phone Numbers
+                  {t("phoneNumbers")}
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -130,7 +131,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Mail className="mr-2 h-5 w-5 text-primary" />
-                  Email Addresses
+                  {t("emailAddresses")}
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -150,16 +151,16 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter mb-6">Contact Our Team</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-6">{t("contactOurTeam")}</h2>
               <p className="text-muted-foreground mb-8">
-                For all inquiries, please use the contact information or map below. We look forward to hearing from you!
+                {t("forAllInquiries")}
               </p>
             </div>
             <div className="rounded-lg overflow-hidden h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126766.39636748288!2d38.6440633!3d9.0119816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1715613791000!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5922923147723!2d38.77026887785189!3d9.009610266242003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85a6cf75f37f%3A0x96070c7187a5164!2z4Yqk4YmiIOGLnuGKlSDhiaLhi53hipDhiLUg4Yi04YqV4Ymw4Yit!5e0!3m2!1sen!2sus!4v1752169206437!5m2!1sen!2sus"
+                width="600"
+                height="450"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -174,57 +175,53 @@ export default function ContactPage() {
       <section className="py-16 md:py-24 bg-muted">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">{t("frequentlyAskedQuestions")}</h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              Find answers to common questions about our products, services, and business processes.
+              {t("findAnswersToCommon")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle>What is the minimum order quantity?</CardTitle>
+                <CardTitle>{t("minimumOrderQuantity")}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Our minimum order quantity is 1 Full Container Load (FCL). However, we can discuss smaller quantities
-                  for first-time orders or samples.
+                  {t("ourMinimumOrder")}
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>How long does shipping take?</CardTitle>
+                <CardTitle>{t("shippingTime")}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Shipping times vary depending on the destination. Typically, it takes 2-4 weeks from the Port of
-                  Djibouti to most international destinations.
+                  {t("shippingTimesVary")}
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Do you provide samples?</CardTitle>
+                <CardTitle>{t("samples")}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Yes, we provide samples upon request. Sample costs and shipping fees may apply, which can be credited
-                  against your first order.
+                  {t("yesWeProvide")}
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>What payment methods do you accept?</CardTitle>
+                <CardTitle>{t("paymentMethods")}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We primarily work with 100% Confirmed Letter of Credit (LC) at Sight. For established clients, we may
-                  consider other payment methods.
+                  {t("wePrimarilyWork")}
                 </p>
               </CardContent>
             </Card>
@@ -235,14 +232,13 @@ export default function ContactPage() {
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">Ready to Partner With Us?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">{t("readyToPartner")}</h2>
           <p className="max-w-[700px] mx-auto mb-8 text-primary-foreground/90">
-            Contact our team today to discuss your specific requirements and discover how NAHORagri can meet your
-            agricultural and engineering needs.
+            {t("contactTeamTodayDiscuss")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/products">Explore Our Products</Link>
+              <Link href="/products">{t("exploreProducts")}</Link>
             </Button>
             <Button
               asChild
@@ -250,7 +246,7 @@ export default function ContactPage() {
               variant="outline"
               className="bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary"
             >
-              <a href="mailto:info@nahoragri.com">Email Us Directly</a>
+              <a href="mailto:info@nahoragri.com">{t("contactUs")}</a>
             </Button>
           </div>
         </div>

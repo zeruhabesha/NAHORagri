@@ -272,5 +272,31 @@
       "short": "Complexité exotique, audacieuse, épicée et vineuse.",
       "detail": "Le café Benchmaji est exotique, audacieux et offre une complexité épicée et vineuse. Il est produit dans la zone de Bench Maji, une région aux altitudes et climats diversifiés."
     }
+  },
+  "chatbot": {
+    "title": "Chatbot NAHORagri",
+    "open": "Ouvrir le chat",
+    "close": "Fermer le chat",
+    "welcome": "Bonjour ! Comment puis-je vous aider aujourd'hui ?",
+    "placeholder": "Tapez votre message...",
+    "inputLabel": "Saisie du chat",
+    "send": "Envoyer",
+    "greeting": "Bonjour ! 👋 Comment puis-je vous aider ?",
+    "products": "Nous proposons du café, des graines de sésame, des produits d'avocat et des solutions d'ingénierie. Sur quoi souhaitez-vous en savoir plus ?",
+    "contact": "Vous pouvez nous contacter via la page de contact. Voulez-vous le lien ?",
+    "thanks": "Avec plaisir ! Si vous avez d'autres questions, n'hésitez pas.",
+    "default": "Je suis là pour vous aider ! Posez-moi vos questions sur nos produits ou services.",
+    "faq": [
+      { "q": "Quels produits proposez-vous ?", "a": "Nous proposons du café éthiopien, des graines de sésame, des produits d'avocat et des solutions d'ingénierie." },
+      { "q": "Comment puis-je vous contacter ?", "a": "Vous pouvez nous contacter via la page de contact ou par email à info@nahoragri.com." },
+      { "q": "Où êtes-vous situés ?", "a": "Nous sommes basés à Addis-Abeba, en Éthiopie, et nous servons des clients dans le monde entier." },
+      { "q": "Exportez-vous à l'international ?", "a": "Oui, nous exportons nos produits vers l'Europe, l'Asie, l'Amérique du Nord, le Moyen-Orient et l'Afrique." },
+      { "q": "Comment puis-je demander un devis ?", "a": "Vous pouvez demander un devis en visitant notre page de contact et en remplissant le formulaire." },
+      { "q": "Quels modes de paiement acceptez-vous ?", "a": "Nous acceptons les virements bancaires et d'autres moyens de paiement sécurisés. Veuillez nous contacter pour plus de détails." },
+      { "q": "Combien de temps prend la livraison ?", "a": "Les délais de livraison dépendent de la destination. Nous vous fournirons un délai estimé lors de la confirmation de votre commande." },
+      { "q": "Puis-je obtenir des échantillons ?", "a": "Oui, des échantillons sont disponibles sur demande. Veuillez nous contacter pour plus d'informations." },
+      { "q": "Proposez-vous une assistance technique ?", "a": "Oui, nous offrons une assistance technique pour nos solutions et produits d'ingénierie." },
+      { "q": "Comment changer la langue du site ?", "a": "Vous pouvez changer de langue en utilisant le sélecteur de langue en haut de la page." }
+    ]
   }
 }

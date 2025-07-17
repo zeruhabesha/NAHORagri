@@ -272,5 +272,31 @@
       "short": "Exotic, bold, spicy and winey complexity.",
       "detail": "Benchmaji coffee is exotic, bold, and offers spicy and winey complexity. It is produced in the Bench Maji zone, a region with diverse altitudes and climates."
     }
+  },
+  "chatbot": {
+    "title": "NAHORagri Chatbot",
+    "open": "Open chat",
+    "close": "Close chat",
+    "welcome": "Hello! How can I help you today?",
+    "placeholder": "Type your message...",
+    "inputLabel": "Chat input",
+    "send": "Send",
+    "greeting": "Hi there! 👋 How can I assist you?",
+    "products": "We offer coffee, sesame seeds, avocado products, and engineering solutions. What would you like to know more about?",
+    "contact": "You can reach us via the contact page. Would you like the link?",
+    "thanks": "You're welcome! If you have more questions, just ask.",
+    "default": "I'm here to help! Please ask me anything about our products or services.",
+    "faq": [
+      { "q": "What products do you offer?", "a": "We offer Ethiopian coffee, sesame seeds, avocado products, and engineering solutions." },
+      { "q": "How can I contact you?", "a": "You can contact us via the contact page or by email at info@nahoragri.com." },
+      { "q": "Where are you located?", "a": "We are based in Addis Ababa, Ethiopia, and serve clients worldwide." },
+      { "q": "Do you export internationally?", "a": "Yes, we export our products to Europe, Asia, North America, the Middle East, and Africa." },
+      { "q": "How can I request a quote?", "a": "You can request a quote by visiting our contact page and filling out the form." },
+      { "q": "What payment methods do you accept?", "a": "We accept bank transfers and other secure payment methods. Please contact us for details." },
+      { "q": "How long does shipping take?", "a": "Shipping times depend on the destination. We will provide an estimated delivery time with your order confirmation." },
+      { "q": "Can I get samples?", "a": "Yes, samples are available upon request. Please contact us for more information." },
+      { "q": "Do you provide technical support?", "a": "Yes, we offer technical support for our engineering solutions and products." },
+      { "q": "How do I switch the website language?", "a": "You can switch languages using the language selector at the top of the page." }
+    ]
   }
 }

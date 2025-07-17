@@ -68,8 +68,27 @@
   "reliableEngineering": "为非洲不断增长的基础设施需求量身定制的可靠工程解决方案。",
   "ourGlobalReach": "我们的全球覆盖",
   "weProudlyExport": "我们自豪地向五大洲的国家出口，将埃塞俄比亚最好的农产品带给世界。",
-  "coffeeBlog": "咖啡博客",
-  "discoverStories": "发现关于埃塞俄比亚咖啡、其文化和全球咖啡行业的故事、技巧和见解。",
+  "coffeeBlog": {
+    "title": "咖啡博客",
+    "intro": "探索埃塞俄比亚咖啡世界的故事、传统与见解。",
+    "readMore": "阅读更多",
+    "viewAll": "查看所有博客文章",
+    "ceremony": {
+      "title": "埃塞俄比亚咖啡仪式",
+      "description": "文化与仪式",
+      "excerpt": "探索埃塞俄比亚咖啡仪式的丰富文化传统，这是一种好客与社区的象征。"
+    },
+    "origins": {
+      "title": "从耶加雪菲到西达摩：咖啡产地",
+      "description": "产地与风味",
+      "excerpt": "了解埃塞俄比亚各咖啡产区的独特之处，从耶加雪菲的花香到西达摩的浓郁风味。"
+    },
+    "sustainability": {
+      "title": "埃塞俄比亚咖啡的可持续发展",
+      "description": "可持续发展",
+      "excerpt": "了解埃塞俄比亚农民如何采用可持续做法，保护土地，确保咖啡的未来。"
+    }
+  },
   "ethiopianCoffeeCeremony": "埃塞俄比亚咖啡仪式：热情好客的传统",
   "exploreRichCultural": "探索埃塞俄比亚咖啡仪式的丰富文化遗产，这是社区和尊重的象征，了解为什么它不仅仅是一杯饮料。",
   "fromYirgacheffeToSidamo": "从耶加雪菲到西达摩：埃塞俄比亚的咖啡产区",

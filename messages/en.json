@@ -68,8 +68,27 @@
   "reliableEngineering": "Reliable engineering solutions tailored to Africa's growing infrastructural needs.",
   "ourGlobalReach": "Our Global Reach",
   "weProudlyExport": "We proudly export to countries across five continents, delivering Ethiopia's finest agricultural products to the world.",
-  "coffeeBlog": "Coffee Blog",
-  "discoverStories": "Discover stories, tips, and insights about Ethiopian coffee, its culture, and the global coffee industry.",
+  "coffeeBlog": {
+    "title": "Coffee Blog",
+    "intro": "Discover stories, traditions, and insights from the world of Ethiopian coffee.",
+    "readMore": "Read More",
+    "viewAll": "View All Blog Posts",
+    "ceremony": {
+      "title": "The Ethiopian Coffee Ceremony",
+      "description": "Culture & Rituals",
+      "excerpt": "Explore the rich cultural tradition of the Ethiopian coffee ceremony, a symbol of hospitality and community."
+    },
+    "origins": {
+      "title": "From Yirgacheffe to Sidamo: Coffee Origins",
+      "description": "Origins & Flavors",
+      "excerpt": "Discover what makes Ethiopia's coffee regions unique, from the floral notes of Yirgacheffe to the bold flavors of Sidamo."
+    },
+    "sustainability": {
+      "title": "Sustainability in Ethiopian Coffee",
+      "description": "Sustainability",
+      "excerpt": "Learn how Ethiopian farmers are embracing sustainable practices to protect the land and ensure coffee's future."
+    }
+  },
   "ethiopianCoffeeCeremony": "The Ethiopian Coffee Ceremony: A Tradition of Hospitality",
   "exploreRichCultural": "Explore the rich cultural heritage of Ethiopia's coffee ceremony, a symbol of community and respect, and learn why it's more than just a drink.",
   "fromYirgacheffeToSidamo": "From Yirgacheffe to Sidamo: Ethiopia's Coffee Regions",

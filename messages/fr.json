@@ -68,8 +68,27 @@
   "reliableEngineering": "Solutions d'ingénierie fiables adaptées aux besoins infrastructurels croissants de l'Afrique.",
   "ourGlobalReach": "Notre Portée Mondiale",
   "weProudlyExport": "Nous exportons fièrement vers des pays de cinq continents, livrant les meilleurs produits agricoles d'Éthiopie au monde.",
-  "coffeeBlog": "Blog du Café",
-  "discoverStories": "Découvrez des histoires, conseils et aperçus sur le café éthiopien, sa culture et l'industrie mondiale du café.",
+  "coffeeBlog": {
+    "title": "Blog Café",
+    "intro": "Découvrez des histoires, des traditions et des perspectives du monde du café éthiopien.",
+    "readMore": "Lire la suite",
+    "viewAll": "Voir tous les articles",
+    "ceremony": {
+      "title": "La cérémonie du café éthiopienne",
+      "description": "Culture & Rituels",
+      "excerpt": "Explorez la riche tradition culturelle de la cérémonie du café éthiopienne, symbole d'hospitalité et de communauté."
+    },
+    "origins": {
+      "title": "De Yirgacheffe à Sidamo : Origines du café",
+      "description": "Origines & Saveurs",
+      "excerpt": "Découvrez ce qui rend les régions caféières d'Éthiopie uniques, des notes florales de Yirgacheffe aux saveurs intenses de Sidamo."
+    },
+    "sustainability": {
+      "title": "Durabilité dans le café éthiopien",
+      "description": "Durabilité",
+      "excerpt": "Découvrez comment les agriculteurs éthiopiens adoptent des pratiques durables pour protéger la terre et assurer l'avenir du café."
+    }
+  },
   "ethiopianCoffeeCeremony": "La Cérémonie du Café Éthiopien : Une Tradition d'Hospitalité",
   "exploreRichCultural": "Explorez le riche patrimoine culturel de la cérémonie du café éthiopien, un symbole de communauté et de respect, et découvrez pourquoi c'est plus qu'une simple boisson.",
   "fromYirgacheffeToSidamo": "De Yirgacheffe à Sidamo : Les Régions de Café d'Éthiopie",

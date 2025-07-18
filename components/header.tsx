@@ -29,6 +29,7 @@ export default function Header() {
           <Link href={`/${locale}`}>{t("home")}</Link>
           <Link href={`/${locale}/about`}>{t("aboutUs")}</Link>
           <Link href={`/${locale}/products`}>{t("products")}</Link>
+          <Link href={`/${locale}/blog`}>{t("blog")}</Link>
           <Link href={`/${locale}/contact`}>{t("contact")}</Link>
         </nav>
 
@@ -70,6 +71,13 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               {t("products")}
+            </Link>
+            <Link
+              href={`/${locale}/blog`}
+              className="text-sm font-medium transition-colors hover:text-primary"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t("blog")}
             </Link>
             <Link
               href={`/${locale}/contact`}

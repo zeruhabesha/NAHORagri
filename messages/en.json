@@ -73,20 +73,35 @@
     "intro": "Discover stories, traditions, and insights from the world of Ethiopian coffee.",
     "readMore": "Read More",
     "viewAll": "View All Blog Posts",
+    "subtitle": "Stories, culture, and sustainability from the heart of Ethiopian coffee.",
+    "noPosts": "No blog posts found.",
+    "by": "by",
     "ceremony": {
       "title": "The Ethiopian Coffee Ceremony",
       "description": "Culture & Rituals",
-      "excerpt": "Explore the rich cultural tradition of the Ethiopian coffee ceremony, a symbol of hospitality and community."
+      "excerpt": "Explore the rich cultural tradition of the Ethiopian coffee ceremony, a symbol of hospitality and community.",
+      "author": "Alemu Tadesse",
+      "date": "June 10, 2024",
+      "category": "Ceremony",
+      "content": "The Ethiopian coffee ceremony is a time-honored tradition that goes beyond simply drinking coffee. It is a social event, a symbol of hospitality, and a way to bring people together. The process involves roasting green coffee beans, grinding them, and brewing the coffee in a special pot called a jebena. The aroma fills the room, and the coffee is served in small cups, often accompanied by popcorn or bread. Participating in the ceremony is a way to show respect and build community bonds."
     },
     "origins": {
       "title": "From Yirgacheffe to Sidamo: Coffee Origins",
       "description": "Origins & Flavors",
-      "excerpt": "Discover what makes Ethiopia's coffee regions unique, from the floral notes of Yirgacheffe to the bold flavors of Sidamo."
+      "excerpt": "Discover what makes Ethiopia's coffee regions unique, from the floral notes of Yirgacheffe to the bold flavors of Sidamo.",
+      "author": "Sara Mengistu",
+      "date": "May 28, 2024",
+      "category": "Origins",
+      "content": "Ethiopia is the birthplace of coffee, and its diverse regions produce beans with unique flavors and aromas. Yirgacheffe is known for its floral and citrus notes, while Sidamo offers a rich, full-bodied cup with hints of spice. Each region's climate, altitude, and processing methods contribute to the distinct profiles that make Ethiopian coffee world-renowned. Exploring these origins is a journey through the heart of coffee culture."
     },
     "sustainability": {
       "title": "Sustainability in Ethiopian Coffee",
       "description": "Sustainability",
-      "excerpt": "Learn how Ethiopian farmers are embracing sustainable practices to protect the land and ensure coffee's future."
+      "excerpt": "Learn how Ethiopian farmers are embracing sustainable practices to protect the land and ensure coffee's future.",
+      "author": "Kebede Fikru",
+      "date": "May 15, 2024",
+      "category": "Sustainability",
+      "content": "Sustainability is at the core of Ethiopian coffee farming. Many farmers use traditional, organic methods that preserve the environment and maintain soil health. Efforts are being made to support fair trade, empower local communities, and ensure that coffee production remains viable for future generations. By choosing Ethiopian coffee, you are supporting a legacy of stewardship and care for the land."
     }
   },
   "ethiopianCoffeeCeremony": "The Ethiopian Coffee Ceremony: A Tradition of Hospitality",
@@ -292,6 +307,7 @@
       "detail": "Benchmaji coffee is exotic, bold, and offers spicy and winey complexity. It is produced in the Bench Maji zone, a region with diverse altitudes and climates."
     }
   },
+  "blog": "Blog",
   "chatbot": {
     "title": "NAHORagri Chatbot",
     "open": "Open chat",
@@ -317,5 +333,6 @@
       { "q": "Do you provide technical support?", "a": "Yes, we offer technical support for our engineering solutions and products." },
       { "q": "How do I switch the website language?", "a": "You can switch languages using the language selector at the top of the page." }
     ]
-  }
+  },
+  "close": "Close"
 }

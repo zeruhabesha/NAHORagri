@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Coffee, Leaf, FuelIcon as Oil, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { CoffeeBlogSection } from "@/components/coffee-blog-section";
+import { CoffeeBlogSection } from "@/components/Coffeeblog";
 import { ChatWidget } from "@/components/ChatWidget";
 import { useTranslations } from "next-intl";
 

@@ -22,7 +22,7 @@ export function CoffeeBlogSection() {
       title: t("coffeeBlog.origins.title"),
       description: t("coffeeBlog.origins.description"),
       excerpt: t("coffeeBlog.origins.excerpt"),
-      image: "/yirgacheffe.jpg",
+      image: "/yigachefe.jpg",
       link: "#"
     },
     {
@@ -30,7 +30,7 @@ export function CoffeeBlogSection() {
       title: t("coffeeBlog.sustainability.title"),
       description: t("coffeeBlog.sustainability.description"),
       excerpt: t("coffeeBlog.sustainability.excerpt"),
-      image: "/vision.jpg",
+      image: "/Sustainability.jpg",
       link: "#"
     }
   ];

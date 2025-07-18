@@ -73,20 +73,35 @@
     "intro": "Découvrez des histoires, des traditions et des perspectives du monde du café éthiopien.",
     "readMore": "Lire la suite",
     "viewAll": "Voir tous les articles",
+    "subtitle": "Histoires, culture et durabilité au cœur du café éthiopien.",
+    "noPosts": "Aucun article de blog trouvé.",
+    "by": "par",
     "ceremony": {
       "title": "La cérémonie du café éthiopienne",
       "description": "Culture & Rituels",
-      "excerpt": "Explorez la riche tradition culturelle de la cérémonie du café éthiopienne, symbole d'hospitalité et de communauté."
+      "excerpt": "Explorez la riche tradition culturelle de la cérémonie du café éthiopienne, symbole d'hospitalité et de communauté.",
+      "author": "Alemu Tadesse",
+      "date": "10 juin 2024",
+      "category": "Cérémonie",
+      "content": "La cérémonie du café éthiopienne est une tradition ancestrale qui va bien au-delà de la simple dégustation. C'est un événement social, un symbole d'hospitalité et un moyen de rassembler les gens. Le processus comprend la torréfaction des grains verts, leur mouture, puis l'infusion dans un pot spécial appelé jebena. L'arôme emplit la pièce et le café est servi dans de petites tasses, souvent accompagné de popcorn ou de pain. Participer à la cérémonie est une marque de respect et renforce les liens communautaires."
     },
     "origins": {
       "title": "De Yirgacheffe à Sidamo : Origines du café",
       "description": "Origines & Saveurs",
-      "excerpt": "Découvrez ce qui rend les régions caféières d'Éthiopie uniques, des notes florales de Yirgacheffe aux saveurs intenses de Sidamo."
+      "excerpt": "Découvrez ce qui rend les régions caféières d'Éthiopie uniques, des notes florales de Yirgacheffe aux saveurs intenses de Sidamo.",
+      "author": "Sara Mengistu",
+      "date": "28 mai 2024",
+      "category": "Origines",
+      "content": "L'Éthiopie est le berceau du café, et ses différentes régions produisent des grains aux saveurs et arômes uniques. Yirgacheffe est réputée pour ses notes florales et d'agrumes, tandis que Sidamo offre une tasse riche et corsée avec des touches d'épices. Le climat, l'altitude et les méthodes de traitement de chaque région contribuent à des profils distincts qui font la renommée mondiale du café éthiopien. Explorer ces origines, c'est voyager au cœur de la culture café."
     },
     "sustainability": {
       "title": "Durabilité dans le café éthiopien",
       "description": "Durabilité",
-      "excerpt": "Découvrez comment les agriculteurs éthiopiens adoptent des pratiques durables pour protéger la terre et assurer l'avenir du café."
+      "excerpt": "Découvrez comment les agriculteurs éthiopiens adoptent des pratiques durables pour protéger la terre et assurer l'avenir du café.",
+      "author": "Kebede Fikru",
+      "date": "15 mai 2024",
+      "category": "Durabilité",
+      "content": "La durabilité est au cœur de la culture du café en Éthiopie. De nombreux agriculteurs utilisent des méthodes traditionnelles et biologiques qui préservent l'environnement et maintiennent la santé des sols. Des efforts sont faits pour soutenir le commerce équitable, autonomiser les communautés locales et garantir la viabilité de la production pour les générations futures. Choisir le café éthiopien, c'est soutenir un héritage de respect et de soin pour la terre."
     }
   },
   "ethiopianCoffeeCeremony": "La Cérémonie du Café Éthiopien : Une Tradition d'Hospitalité",
@@ -317,5 +332,6 @@
       { "q": "Proposez-vous une assistance technique ?", "a": "Oui, nous offrons une assistance technique pour nos solutions et produits d'ingénierie." },
       { "q": "Comment changer la langue du site ?", "a": "Vous pouvez changer de langue en utilisant le sélecteur de langue en haut de la page." }
     ]
-  }
+  },
+  "blog": "Blog"
 }

@@ -17,49 +17,49 @@ function CoffeeOriginsGrid() {
     {
       key: "lekempti",
       name: t("coffeeOrigin.lekempti.name"),
-      image: "/coffee.jpg",
+      image: "/LEKEMPTI.jpg",
       short: t("coffeeOrigin.lekempti.short"),
       detail: t("coffeeOrigin.lekempti.detail")
     },
     {
       key: "djimmah",
       name: t("coffeeOrigin.djimmah.name"),
-      image: "/coffee.jpg",
+      image: "/djimmah.webp",
       short: t("coffeeOrigin.djimmah.short"),
       detail: t("coffeeOrigin.djimmah.detail")
     },
     {
       key: "yirgacheffe",
       name: t("coffeeOrigin.yirgacheffe.name"),
-      image: "/coffee.jpg",
+      image: "/yirgacheffe.jpg",
       short: t("coffeeOrigin.yirgacheffe.short"),
       detail: t("coffeeOrigin.yirgacheffe.detail")
     },
     {
       key: "sidamo",
       name: t("coffeeOrigin.sidamo.name"),
-      image: "/coffee.jpg",
+      image: "/sidamo.jpg",
       short: t("coffeeOrigin.sidamo.short"),
       detail: t("coffeeOrigin.sidamo.detail")
     },
     {
       key: "guji",
       name: t("coffeeOrigin.guji.name"),
-      image: "/coffee.jpg",
+      image: "/guji.jpg",
       short: t("coffeeOrigin.guji.short"),
       detail: t("coffeeOrigin.guji.detail")
     },
     {
       key: "limmu",
       name: t("coffeeOrigin.limmu.name"),
-      image: "/coffee.jpg",
+      image: "/limmu.jpg",
       short: t("coffeeOrigin.limmu.short"),
       detail: t("coffeeOrigin.limmu.detail")
     },
     {
       key: "benchmaji",
       name: t("coffeeOrigin.benchmaji.name"),
-      image: "/coffee.jpg",
+      image: "/benchmaji.jpg",
       short: t("coffeeOrigin.benchmaji.short"),
       detail: t("coffeeOrigin.benchmaji.detail")
     }
@@ -109,28 +109,28 @@ const sesameProducts = [
   {
     key: "humera",
     name: "HUMERA SESAME",
-    image: "/seeds.jpg", // Replace with actual image if available
+    image: "/humera.jpg", // Replace with actual image if available
     short: "Humera type of sesame, which is known to be a premium variety. Native to the Humera district in northwest Ethiopia. Whitish Humera type is known for its top quality and has a bid demand in the world market.",
     detail: "Humera type of sesame, which is known to be a premium variety. Native to the Humera district in northwest Ethiopia. Whitish Humera type is known for its top quality and has a bid demand in the world market."
   },
   {
     key: "wollega",
     name: "WOLLEGA SESAME",
-    image: "/seeds.jpg", // Replace with actual image if available
+    image: "/wollega.jpg", // Replace with actual image if available
     short: "Wollega type sesame seeds are the mixed/brownish coloured variety which comes from Wollega region. The Wollega type sesame seeds have a competitive advantage for edible oil production because of its high oil content.",
     detail: "Wollega type sesame seeds are the mixed/brownish coloured variety which comes from Wollega region. The Wollega type sesame seeds have a competitive advantage for edible oil production because of its high oil content."
   },
   {
     key: "hulled",
     name: "HULLED SESAME",
-    image: "/seeds.jpg", // Replace with actual image if available
+    image: "/hulled.webp", // Replace with actual image if available
     short: "Hulled sesame seeds are those that have lost their hull or outer shell during the manufacturing or processing stage.",
     detail: "Hulled sesame seeds are those that have lost their hull or outer shell during the manufacturing or processing stage."
   },
   {
     key: "tahini",
     name: "TAHINI",
-    image: "/seeds.jpg", // Replace with actual image if available
+    image: "/tahini.jpg", // Replace with actual image if available
     short: "Tahini is a middle eastern condiment made from toasted ground hulled sesame seeds & sesame oil, has a very rich creamy paste,",
     detail: "Tahini is a middle eastern condiment made from toasted ground hulled sesame seeds & sesame oil, has a very rich creamy paste,"
   }

@@ -21,6 +21,7 @@ export default function BlogPage() {
       description: t("coffeeBlog.ceremony.description"),
       excerpt: t("coffeeBlog.ceremony.excerpt"),
       image: "/ceremony.jpg",
+      link: `/blog/ceremony`,
       author: t("coffeeBlog.ceremony.author"),
       date: t("coffeeBlog.ceremony.date"),
       category: t("coffeeBlog.ceremony.category"),
@@ -32,6 +33,7 @@ export default function BlogPage() {
       description: t("coffeeBlog.origins.description"),
       excerpt: t("coffeeBlog.origins.excerpt"),
       image: "/yigachefe.jpg",
+      link: `/blog/origins`,
       author: t("coffeeBlog.origins.author"),
       date: t("coffeeBlog.origins.date"),
       category: t("coffeeBlog.origins.category"),
@@ -42,11 +44,38 @@ export default function BlogPage() {
       title: t("coffeeBlog.sustainability.title"),
       description: t("coffeeBlog.sustainability.description"),
       excerpt: t("coffeeBlog.sustainability.excerpt"),
-      image: "/Sustainability.jpg",
+      image: "/sustainability.jpg",
+      link: `/blog/sustainability`,
       author: t("coffeeBlog.sustainability.author"),
       date: t("coffeeBlog.sustainability.date"),
       category: t("coffeeBlog.sustainability.category"),
       content: t("coffeeBlog.sustainability.content")
+    },
+    // New post: Coffee and Health
+    {
+      key: "health",
+      title: t("coffeeBlog.health.title"),
+      description: t("coffeeBlog.health.description"),
+      excerpt: t("coffeeBlog.health.excerpt"),
+      image: "/coffee-health.webp",
+      link: `/blog/health`,
+      author: t("coffeeBlog.health.author"),
+      date: t("coffeeBlog.health.date"),
+      category: t("coffeeBlog.health.category"),
+      content: t("coffeeBlog.health.content")
+    },
+    // New post: Women in Ethiopian Coffee
+    {
+      key: "women",
+      title: t("coffeeBlog.women.title"),
+      description: t("coffeeBlog.women.description"),
+      excerpt: t("coffeeBlog.women.excerpt"),
+      image: "/women-coffee.jpg",
+      link: `/blog/women`,
+      author: t("coffeeBlog.women.author"),
+      date: t("coffeeBlog.women.date"),
+      category: t("coffeeBlog.women.category"),
+      content: t("coffeeBlog.women.content")
     }
   ];
   const selectedPost = posts.find(p => p.key === openPost);
@@ -116,12 +145,13 @@ export default function BlogPage() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
           <div className="bg-background rounded-2xl shadow-2xl max-w-2xl w-full relative overflow-hidden animate-in fade-in zoom-in duration-300">
             <button
-              className="absolute top-4 right-4 flex items-center gap-2 text-muted-foreground hover:text-primary text-lg px-4 py-2 bg-background/80 rounded-full border shadow"
+              className="absolute top-4 right-4 flex items-center gap-2 text-muted-foreground hover:text-primary text-lg px-4 py-2 bg-background z-[100] rounded-full border shadow"
+              style={{ background: 'rgba(255,255,255,0.95)' }}
               onClick={() => setOpenPost(null)}
-              aria-label={t("close")}
+              aria-label={t("close") || "Close"}
             >
-              <X className="w-5 h-5" />
-              <span>{t("close")}</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6L14 14M6 14L14 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
+              <span>{t("close") || "Close"}</span>
             </button>
             <div className="relative aspect-[4/3] w-full">
               <Image src={selectedPost.image} alt={selectedPost.title} fill className="object-cover rounded-t-2xl" />

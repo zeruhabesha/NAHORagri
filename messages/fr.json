@@ -102,6 +102,24 @@
       "date": "15 mai 2024",
       "category": "Durabilité",
       "content": "La durabilité est au cœur de la culture du café en Éthiopie. De nombreux agriculteurs utilisent des méthodes traditionnelles et biologiques qui préservent l'environnement et maintiennent la santé des sols. Des efforts sont faits pour soutenir le commerce équitable, autonomiser les communautés locales et garantir la viabilité de la production pour les générations futures. Choisir le café éthiopien, c'est soutenir un héritage de respect et de soin pour la terre."
+    },
+    "health": {
+      "title": "Café et santé : mythes et réalités",
+      "description": "Santé & Bien-être",
+      "excerpt": "Découvrez la vérité sur l'impact du café sur la santé, des antioxydants aux idées reçues.",
+      "author": "Dr. Helen Asfaw",
+      "date": "20 juin 2024",
+      "category": "Santé",
+      "content": "Le café est bien plus qu'une boisson appréciée : c'est aussi une source d'antioxydants et de nutriments. Des études récentes montrent qu'une consommation modérée de café peut faire partie d'un mode de vie sain, réduisant potentiellement le risque de certaines maladies. Cependant, il est important de distinguer le vrai du faux et de consommer le café avec modération."
+    },
+    "women": {
+      "title": "Les femmes dans le café éthiopien : un changement porteur d'espoir",
+      "description": "Communauté & Impact",
+      "excerpt": "Découvrez le rôle essentiel des femmes dans l'industrie du café en Éthiopie et leur chemin vers l'autonomisation.",
+      "author": "Marta Bekele",
+      "date": "25 juin 2024",
+      "category": "Communauté",
+      "content": "Les femmes sont au cœur du café éthiopien, de la culture à l'exportation. Leurs contributions sont essentielles à la qualité et à la durabilité. Les initiatives soutenant l'éducation, le leadership et l'entrepreneuriat des femmes transforment les communautés et l'avenir du café en Éthiopie."
     }
   },
   "ethiopianCoffeeCeremony": "La Cérémonie du Café Éthiopien : Une Tradition d'Hospitalité",
@@ -325,13 +343,67 @@
       { "q": "Comment puis-je vous contacter ?", "a": "Vous pouvez nous contacter via la page de contact ou par email à info@nahoragri.com." },
       { "q": "Où êtes-vous situés ?", "a": "Nous sommes basés à Addis-Abeba, en Éthiopie, et nous servons des clients dans le monde entier." },
       { "q": "Exportez-vous à l'international ?", "a": "Oui, nous exportons nos produits vers l'Europe, l'Asie, l'Amérique du Nord, le Moyen-Orient et l'Afrique." },
-      { "q": "Comment puis-je demander un devis ?", "a": "Vous pouvez demander un devis en visitant notre page de contact et en remplissant le formulaire." },
-      { "q": "Quels modes de paiement acceptez-vous ?", "a": "Nous acceptons les virements bancaires et d'autres moyens de paiement sécurisés. Veuillez nous contacter pour plus de détails." },
+      { "q": "Comment demander un devis ?", "a": "Vous pouvez demander un devis en visitant notre page de contact et en remplissant le formulaire. Notre équipe vous répondra rapidement." },
+      { "q": "Quels modes de paiement acceptez-vous ?", "a": "Nous acceptons les virements bancaires et d'autres moyens de paiement sécurisés. Contactez-nous pour plus de détails." },
       { "q": "Combien de temps prend la livraison ?", "a": "Les délais de livraison dépendent de la destination. Nous vous fournirons un délai estimé lors de la confirmation de votre commande." },
-      { "q": "Puis-je obtenir des échantillons ?", "a": "Oui, des échantillons sont disponibles sur demande. Veuillez nous contacter pour plus d'informations." },
-      { "q": "Proposez-vous une assistance technique ?", "a": "Oui, nous offrons une assistance technique pour nos solutions et produits d'ingénierie." },
-      { "q": "Comment changer la langue du site ?", "a": "Vous pouvez changer de langue en utilisant le sélecteur de langue en haut de la page." }
+      { "q": "Puis-je obtenir des échantillons ?", "a": "Oui, des échantillons sont disponibles sur demande. Contactez-nous pour plus d'informations." },
+      { "q": "Proposez-vous un support technique ?", "a": "Oui, nous offrons un support technique pour nos solutions et produits d'ingénierie. Notre équipe est là pour vous accompagner." },
+      { "q": "Comment changer la langue du site ?", "a": "Vous pouvez changer de langue en utilisant le sélecteur de langue en haut de la page." },
+      { "q": "Vos produits sont-ils certifiés bio ?", "a": "Beaucoup de nos produits sont certifiés bio ou issus de pratiques durables. Demandez-nous les certifications spécifiques." },
+      { "q": "Comment garantissez-vous la qualité des produits ?", "a": "Nous suivons des procédures de contrôle qualité strictes et détenons des certifications internationales pour garantir les plus hauts standards." },
+      { "q": "Pouvez-vous gérer des commandes importantes ou personnalisées ?", "a": "Oui, nous pouvons répondre à des commandes importantes ou sur mesure. Contactez-nous pour discuter de vos besoins." },
+      { "q": "Quelle est votre politique de durabilité ?", "a": "Nous sommes engagés dans une démarche de sourcing durable et de pratiques respectueuses de l'environnement tout au long de notre chaîne d'approvisionnement." },
+      { "q": "Offrez-vous un service après-vente ?", "a": "Oui, notre équipe assure un service après-vente et reste disponible pour toute question après votre achat." },
+      { "q": "Comment passer une commande ?", "a": "Vous pouvez passer une commande en nous contactant via notre site ou par email. Nous vous guiderons à chaque étape." },
+      { "q": "Quels partenaires logistiques utilisez-vous ?", "a": "Nous travaillons avec des sociétés logistiques internationales reconnues pour garantir une livraison sûre et rapide de vos produits." },
+      { "q": "Puis-je visiter vos installations ?", "a": "Nous accueillons les visites de partenaires et clients. Contactez-nous pour organiser une visite de nos installations en Éthiopie." }
     ]
   },
-  "blog": "Blog"
+  "blog": "Blog",
+  "modalClose": "Fermer",
+  "close": "Fermer",
+  "howToOrder": "Comment Commander",
+  "stepInquiry": "Envoyez-nous votre demande ou votre intérêt produit via notre formulaire de contact ou par email.",
+  "stepConsultation": "Notre équipe vous conseillera pour comprendre vos besoins et proposer des recommandations.",
+  "stepQuotation": "Recevez un devis détaillé adapté à vos besoins.",
+  "stepOrderConfirmation": "Confirmez votre commande et effectuez le paiement en toute sécurité.",
+  "stepDelivery": "Nous traitons, emballons et livrons vos produits à destination.",
+  "testimonials": "Témoignages Clients",
+  "testimonial1": {
+    "text": "NAHORagri a fourni un service exceptionnel et des produits de grande qualité. Je recommande vivement !",
+    "author": "Jean D.",
+    "company": "Global Importateurs SARL"
+  },
+  "testimonial2": {
+    "text": "L'équipe a été réactive et professionnelle tout au long du processus.",
+    "author": "Marie L.",
+    "company": "Café Parisien"
+  },
+  "testimonial3": {
+    "text": "Nous apprécions les pratiques durables et la fiabilité de NAHORagri.",
+    "author": "Chen Wei",
+    "company": "Shanghai Foods"
+  },
+  "contactForm": {
+    "name": "Nom",
+    "email": "Email",
+    "company": "Société",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "interest": "Domaine d'intérêt",
+    "coffee": "Café",
+    "seeds": "Graines de sésame",
+    "engineering": "Ingénierie",
+    "message": "Message",
+    "namePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez votre email",
+    "companyPlaceholder": "Entrez votre société (optionnel)",
+    "phonePlaceholder": "Entrez votre téléphone (optionnel)",
+    "countryPlaceholder": "Entrez votre pays (optionnel)",
+    "messagePlaceholder": "Tapez votre message ici...",
+    "send": "Envoyer le message",
+    "sending": "Envoi...",
+    "sendWhatsApp": "Envoyer via WhatsApp",
+    "errorRequired": "Veuillez remplir tous les champs obligatoires."
+  }
 }

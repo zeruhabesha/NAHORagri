@@ -102,6 +102,24 @@
       "date": "May 15, 2024",
       "category": "Sustainability",
       "content": "Sustainability is at the core of Ethiopian coffee farming. Many farmers use traditional, organic methods that preserve the environment and maintain soil health. Efforts are being made to support fair trade, empower local communities, and ensure that coffee production remains viable for future generations. By choosing Ethiopian coffee, you are supporting a legacy of stewardship and care for the land."
+    },
+    "health": {
+      "title": "Coffee and Health: Myths & Facts",
+      "description": "Health & Wellness",
+      "excerpt": "Uncover the truth about coffee's impact on health, from antioxidants to common misconceptions.",
+      "author": "Dr. Helen Asfaw",
+      "date": "June 20, 2024",
+      "category": "Health",
+      "content": "Coffee is more than just a beloved beverage—it's also a source of antioxidants and nutrients. Recent studies show that moderate coffee consumption can be part of a healthy lifestyle, potentially reducing the risk of certain diseases. However, it's important to separate fact from fiction and enjoy coffee in moderation."
+    },
+    "women": {
+      "title": "Women in Ethiopian Coffee: Empowering Change",
+      "description": "Community & Impact",
+      "excerpt": "Discover the vital role women play in Ethiopia's coffee industry and their journey toward empowerment.",
+      "author": "Marta Bekele",
+      "date": "June 25, 2024",
+      "category": "Community",
+      "content": "Women are at the heart of Ethiopian coffee, from farming to export. Their contributions are essential to quality and sustainability. Initiatives supporting women's education, leadership, and entrepreneurship are transforming communities and the future of coffee in Ethiopia."
     }
   },
   "ethiopianCoffeeCeremony": "The Ethiopian Coffee Ceremony: A Tradition of Hospitality",
@@ -326,13 +344,66 @@
       { "q": "How can I contact you?", "a": "You can contact us via the contact page or by email at info@nahoragri.com." },
       { "q": "Where are you located?", "a": "We are based in Addis Ababa, Ethiopia, and serve clients worldwide." },
       { "q": "Do you export internationally?", "a": "Yes, we export our products to Europe, Asia, North America, the Middle East, and Africa." },
-      { "q": "How can I request a quote?", "a": "You can request a quote by visiting our contact page and filling out the form." },
+      { "q": "How can I request a quote?", "a": "You can request a quote by visiting our contact page and filling out the form. Our team will respond promptly." },
       { "q": "What payment methods do you accept?", "a": "We accept bank transfers and other secure payment methods. Please contact us for details." },
       { "q": "How long does shipping take?", "a": "Shipping times depend on the destination. We will provide an estimated delivery time with your order confirmation." },
       { "q": "Can I get samples?", "a": "Yes, samples are available upon request. Please contact us for more information." },
-      { "q": "Do you provide technical support?", "a": "Yes, we offer technical support for our engineering solutions and products." },
-      { "q": "How do I switch the website language?", "a": "You can switch languages using the language selector at the top of the page." }
+      { "q": "Do you provide technical support?", "a": "Yes, we offer technical support for our engineering solutions and products. Our team is here to help you succeed." },
+      { "q": "How do I switch the website language?", "a": "You can switch languages using the language selector at the top of the page." },
+      { "q": "Are your products certified organic?", "a": "Many of our products are certified organic or produced using sustainable practices. Please ask about specific certifications." },
+      { "q": "How do you ensure product quality?", "a": "We follow strict quality control procedures and hold international certifications to ensure the highest standards." },
+      { "q": "Can you handle large or custom orders?", "a": "Yes, we can accommodate large and custom orders. Contact us to discuss your requirements." },
+      { "q": "What is your sustainability policy?", "a": "We are committed to sustainable sourcing and environmentally responsible practices throughout our supply chain." },
+      { "q": "Do you offer after-sales support?", "a": "Yes, our team provides after-sales support and is available to answer any questions you may have after your purchase." },
+      { "q": "How do I place an order?", "a": "You can place an order by contacting us through our website or email. We will guide you through the process step by step." },
+      { "q": "What logistics partners do you use?", "a": "We work with reputable international logistics companies to ensure safe and timely delivery of your products." },
+      { "q": "Can I visit your facilities?", "a": "We welcome visits from partners and clients. Please contact us to arrange a tour of our facilities in Ethiopia." }
     ]
   },
-  "close": "Close"
+  "modalClose": "Close",
+  "close": "Close",
+  "howToOrder": "How to Order",
+  "stepInquiry": "Send us your inquiry or product interest via our contact form or email.",
+  "stepConsultation": "Our team will consult with you to understand your needs and provide recommendations.",
+  "stepQuotation": "Receive a detailed quotation tailored to your requirements.",
+  "stepOrderConfirmation": "Confirm your order and arrange payment securely.",
+  "stepDelivery": "We process, pack, and deliver your products to your destination.",
+  "testimonials": "Customer Testimonials",
+  "testimonial1": {
+    "text": "NAHORagri provided exceptional service and top-quality products. Highly recommended!",
+    "author": "John D.",
+    "company": "Global Importers Ltd."
+  },
+  "testimonial2": {
+    "text": "The team was responsive and professional throughout the process.",
+    "author": "Marie L.",
+    "company": "Café Parisien"
+  },
+  "testimonial3": {
+    "text": "We appreciate the sustainable practices and reliability of NAHORagri.",
+    "author": "Chen Wei",
+    "company": "Shanghai Foods"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "phone": "Phone",
+    "country": "Country",
+    "interest": "Area of Interest",
+    "coffee": "Coffee",
+    "seeds": "Sesame Seeds",
+    "engineering": "Engineering",
+    "message": "Message",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "Enter your email",
+    "companyPlaceholder": "Enter your company (optional)",
+    "phonePlaceholder": "Enter your phone (optional)",
+    "countryPlaceholder": "Enter your country (optional)",
+    "messagePlaceholder": "Type your message here...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "sendWhatsApp": "Send via WhatsApp",
+    "errorRequired": "Please fill in all required fields."
+  }
 }

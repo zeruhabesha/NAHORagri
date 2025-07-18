@@ -6,10 +6,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { CoffeeBlogSection } from "@/components/Coffeeblog";
 import { ChatWidget } from "@/components/ChatWidget";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import { useParams } from "next/navigation";
 
 export default function Home() {
-  const t = useTranslations();
-  return (
+    const t = useTranslations();
+    const { locale } = useParams();
+    return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 hero-pattern">
@@ -24,10 +27,10 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg">
-              <Link href="/products">{t("exploreProducts")}</Link>
+              <Link href={`/${locale}/products`}>{t("exploreProducts")}</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/contact">{t("contactUs")}</Link>
+              <Link href={`/${locale}/contact`}>{t("contactUs")}</Link>
             </Button>
           </div>
         </div>
@@ -190,6 +193,80 @@ export default function Home() {
           <Button asChild size="lg" variant="secondary">
             <Link href="/contact">{t("getInTouch")}</Link>
           </Button>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 bg-background border-b">
+        <div className="container">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">{t("whyChooseUs")}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-muted rounded-xl p-6 shadow flex flex-col items-center text-center">
+              <span className="text-4xl mb-4">🌱</span>
+              <h3 className="font-semibold mb-2">{t("sustainablePractices")}</h3>
+              <p className="text-muted-foreground">{t("environmentallyResponsible")}</p>
+            </div>
+            <div className="bg-muted rounded-xl p-6 shadow flex flex-col items-center text-center">
+              <span className="text-4xl mb-4">✅</span>
+              <h3 className="font-semibold mb-2">{t("qualityAssurance")}</h3>
+              <p className="text-muted-foreground">{t("rigorousQualityControl")}</p>
+            </div>
+            <div className="bg-muted rounded-xl p-6 shadow flex flex-col items-center text-center">
+              <span className="text-4xl mb-4">🌍</span>
+              <h3 className="font-semibold mb-2">{t("globalExpertise")}</h3>
+              <p className="text-muted-foreground">{t("exportExperience")}</p>
+            </div>
+            <div className="bg-muted rounded-xl p-6 shadow flex flex-col items-center text-center">
+              <span className="text-4xl mb-4">🤝</span>
+              <h3 className="font-semibold mb-2">{t("customerService")}</h3>
+              <p className="text-muted-foreground">{t("dedicatedAccountManagement")}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How to Order Section */}
+      <section className="py-16 bg-muted">
+        <div className="container">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">{t("howToOrder")}</h2>
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            <div className="w-full md:w-1/2 flex-shrink-0">
+              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow">
+                <Image src="/coffee.webp" alt={t("howToOrder")} fill className="object-cover" />
+              </div>
+            </div>
+            <ol className="w-full md:w-1/2 max-w-2xl mx-auto space-y-6 text-lg">
+              <li><span className="font-semibold">1.</span> {t("stepInquiry")}</li>
+              <li><span className="font-semibold">2.</span> {t("stepConsultation")}</li>
+              <li><span className="font-semibold">3.</span> {t("stepQuotation")}</li>
+              <li><span className="font-semibold">4.</span> {t("stepOrderConfirmation")}</li>
+              <li><span className="font-semibold">5.</span> {t("stepDelivery")}</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Testimonials Section */}
+      <section className="py-16 bg-background">
+        <div className="container">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">{t("testimonials")}</h2>
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+            <div className="bg-muted rounded-xl p-6 shadow max-w-md w-full text-center">
+              <p className="italic mb-4">“{t("testimonial1.text")}"</p>
+              <div className="font-semibold">{t("testimonial1.author")}</div>
+              <div className="text-xs text-muted-foreground">{t("testimonial1.company")}</div>
+            </div>
+            <div className="bg-muted rounded-xl p-6 shadow max-w-md w-full text-center">
+              <p className="italic mb-4">“{t("testimonial2.text")}"</p>
+              <div className="font-semibold">{t("testimonial2.author")}</div>
+              <div className="text-xs text-muted-foreground">{t("testimonial2.company")}</div>
+            </div>
+            <div className="bg-muted rounded-xl p-6 shadow max-w-md w-full text-center">
+              <p className="italic mb-4">“{t("testimonial3.text")}"</p>
+              <div className="font-semibold">{t("testimonial3.author")}</div>
+              <div className="text-xs text-muted-foreground">{t("testimonial3.company")}</div>
+            </div>
+          </div>
         </div>
       </section>
 

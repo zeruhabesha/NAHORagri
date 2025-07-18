@@ -18,7 +18,7 @@ export function CoffeeBlogSection() {
       title: t("coffeeBlog.ceremony.title"),
       description: t("coffeeBlog.ceremony.description"),
       excerpt: t("coffeeBlog.ceremony.excerpt"),
-      image: "/ceremony.jpg",
+      image: "/coffee.jpg",
       author: t("coffeeBlog.ceremony.author"),
       date: t("coffeeBlog.ceremony.date"),
       category: t("coffeeBlog.ceremony.category"),
@@ -95,12 +95,11 @@ export function CoffeeBlogSection() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
           <div className="bg-background rounded-2xl shadow-2xl max-w-2xl w-full relative overflow-hidden animate-in fade-in zoom-in duration-300">
             <button
-              className="absolute top-4 right-4 flex items-center gap-2 text-muted-foreground hover:text-primary text-lg px-4 py-2 bg-background z-[100] rounded-full border shadow"
-              style={{ background: 'rgba(255,255,255,0.95)' }}
+              className="absolute top-4 right-4 flex items-center gap-2 text-muted-foreground hover:text-primary text-lg px-4 py-2 bg-background/80 rounded-full border shadow"
               onClick={() => setOpenPost(null)}
-              aria-label={t("modalClose") || "Close"}
+              aria-label={t("close") || "Close"}
             >
-              <span>{t("modalClose") || "Close"}</span>
+              <span>{t("close") || "Close"}</span>
             </button>
             <div className="relative aspect-[4/3] w-full">
               <Image src={selectedPost.image} alt={selectedPost.title} fill className="object-cover rounded-t-2xl" />
@@ -123,4 +122,4 @@ export function CoffeeBlogSection() {
       )}
     </section>
   );
-} 
+}

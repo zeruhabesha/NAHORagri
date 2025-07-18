@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import Link from "next/link"
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin, Phone, MessageCircle, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -47,11 +47,9 @@ export default function ContactPage() {
 
       if (result.success) {
         toast({
-          title: "Message sent",
+          title: t("contactForm.send"),
           description: result.message,
         })
-
-        // Reset form
         setFormData({
           name: "",
           email: "",
@@ -63,7 +61,7 @@ export default function ContactPage() {
         })
       } else {
         toast({
-          title: "Error",
+          title: t("contactForm.errorRequired"),
           description: result.message,
           variant: "destructive",
         })
@@ -71,7 +69,7 @@ export default function ContactPage() {
     } catch (error) {
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again later.",
+        description: t("contactForm.errorRequired"),
         variant: "destructive",
       })
     } finally {
@@ -151,10 +149,57 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
+              {/* Replaced contact form with a message and CTA */}
               <h2 className="text-3xl font-bold tracking-tighter mb-6">{t("contactOurTeam")}</h2>
-              <p className="text-muted-foreground mb-8">
-                {t("forAllInquiries")}
-              </p>
+              <p className="text-muted-foreground mb-8">{t("forAllInquiries")}</p>
+              {/* Contact options with icons */}
+              <div className="bg-muted p-8 rounded-xl shadow flex flex-col items-center gap-6">
+                <p className="text-lg text-center">
+                  {t("contactTeamTodayDiscuss")}
+                </p>
+                <div className="flex flex-wrap gap-6 justify-center items-center">
+                  {/* Email */}
+                  <a
+                    href="mailto:info@nahoragri.com"
+                    aria-label={t("contactUs") + " (Email)"}
+                    className="flex flex-col items-center group hover:text-primary transition-colors"
+                  >
+                    <Mail className="h-8 w-8 mb-1" />
+                    <span className="text-xs">Email</span>
+                  </a>
+                  {/* WhatsApp */}
+                  <a
+                    href="https://wa.me/+251911514499"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                    className="flex flex-col items-center group hover:text-green-600 transition-colors"
+                  >
+                    <MessageCircle className="h-8 w-8 mb-1" />
+                    <span className="text-xs">WhatsApp</span>
+                  </a>
+                  {/* Telegram */}
+                  <a
+                    href="https://t.me"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Telegram"
+                    className="flex flex-col items-center group hover:text-blue-500 transition-colors"
+                  >
+                    <Send className="h-8 w-8 mb-1" />
+                    <span className="text-xs">Telegram</span>
+                  </a>
+                  {/* Phone */}
+                  <a
+                    href="tel:+251911251023"
+                    aria-label={t("contactUs") + " (Phone)"}
+                    className="flex flex-col items-center group hover:text-primary transition-colors"
+                  >
+                    <Phone className="h-8 w-8 mb-1" />
+                    <span className="text-xs">Call</span>
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="rounded-lg overflow-hidden h-[500px]">
               <iframe

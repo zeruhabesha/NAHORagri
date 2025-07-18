@@ -137,6 +137,30 @@ export default function BlogPage() {
               <h2 className="text-2xl font-bold mb-4">{selectedPost.title}</h2>
               <div className="prose prose-neutral max-w-none text-foreground" style={{ whiteSpace: 'pre-line' }}>
                 {selectedPost.content}
+                {selectedPost.key === "sustainability" && (
+                  <>
+                    <div className="my-6">
+                      <Image src="/yirgalem.jpg" alt="Yirgalem Processing Plant" width={600} height={350} className="rounded-lg w-full object-cover mb-2" />
+                      <div className="text-xs text-muted-foreground text-center mb-4">Yirgalem Processing Plant</div>
+                      <ul className="list-disc pl-6 text-sm mb-4">
+                        <li>Capacity: 10 tons per day</li>
+                        <li>HACCP certified</li>
+                        <li>Cold storage facilities</li>
+                        <li>Specializes in fresh packing and paste production</li>
+                      </ul>
+                    </div>
+                    <div className="my-6">
+                      <Image src="/jimma.jpg" alt="Jimma Oil Extraction Facility" width={600} height={350} className="rounded-lg w-full object-cover mb-2" />
+                      <div className="text-xs text-muted-foreground text-center mb-4">Jimma Oil Extraction Facility</div>
+                      <ul className="list-disc pl-6 text-sm">
+                        <li>Capacity: 5,000 liters per week</li>
+                        <li>Cold-press technology</li>
+                        <li>ISO 22000 certified</li>
+                        <li>Specializes in premium oil production</li>
+                      </ul>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </div>

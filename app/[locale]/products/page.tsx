@@ -344,6 +344,9 @@ export default function ProductsPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <Card>
                   <CardHeader>
+                    <div className="relative w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden">
+                      <Image src="/raw-avocado.jpg" alt="Raw Avocados" fill className="object-cover" />
+                    </div>
                     <CardTitle>{t("rawAvocados")}</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -361,6 +364,9 @@ export default function ProductsPage() {
 
                 <Card>
                   <CardHeader>
+                    <div className="relative w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden">
+                      <Image src="/avocado-paste.jpg" alt="Avocado Paste" fill className="object-cover" />
+                    </div>
                     <CardTitle>{t("avocadoPaste")}</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -378,6 +384,9 @@ export default function ProductsPage() {
 
                 <Card>
                   <CardHeader>
+                    <div className="relative w-full aspect-[4/3] mb-4 rounded-lg overflow-hidden">
+                      <Image src="/cold-pressed-oil.webp" alt="Cold-Pressed Oil" fill className="object-cover" />
+                    </div>
                     <CardTitle>{t("coldPressedOil")}</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -406,6 +415,9 @@ export default function ProductsPage() {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="bg-muted p-4 rounded-lg">
+                        <div className="relative w-full aspect-[4/3] mb-3 rounded-lg overflow-hidden">
+                          <Image src="/yirgalem.jpg" alt="Yirgalem Processing Plant" fill className="object-cover" />
+                        </div>
                         <h4 className="font-semibold mb-2">{t("yirgalemProcessingPlant")}</h4>
                         <ul className="space-y-1 text-sm">
                           <li>• {t("capacity")}: 10 tons per day</li>
@@ -415,6 +427,9 @@ export default function ProductsPage() {
                         </ul>
                       </div>
                       <div className="bg-muted p-4 rounded-lg">
+                        <div className="relative w-full aspect-[4/3] mb-3 rounded-lg overflow-hidden">
+                          <Image src="/jimma.jpg" alt="Jimma Oil Extraction Facility" fill className="object-cover" />
+                        </div>
                         <h4 className="font-semibold mb-2">{t("jimmaOilExtraction")}</h4>
                         <ul className="space-y-1 text-sm">
                           <li>• {t("capacity")}: 5,000 liters per week</li>

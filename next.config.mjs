@@ -20,6 +20,15 @@ const nextConfig = {
     // Disable Next.js Image Optimization (useful for static or external images)
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/en',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 // Wrap the Next.js config with next-intl plugin to add i18n support

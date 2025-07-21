@@ -39,7 +39,7 @@ export default function Header() {
           </div>
           <ModeToggle />
           <Button asChild className="hidden md:flex">
-            <Link href="/contact">{t("getAQuote")}</Link>
+            <Link href={`/${locale}/contact`}>{t("getAQuote")}</Link>
           </Button>
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -90,7 +90,7 @@ export default function Header() {
               <LanguageSwitcher />
             </div>
             <Button asChild>
-              <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+              <Link href={`/${locale}/contact`} onClick={() => setIsMenuOpen(false)}>
                 {t("getAQuote")}
               </Link>
             </Button>

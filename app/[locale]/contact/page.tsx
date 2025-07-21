@@ -14,6 +14,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
 import { sendEmail, type FormData } from "@/app/[locale]/actions/send-email"
 import { useTranslations } from "next-intl"
+import { useParams } from "next/navigation";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -28,6 +29,7 @@ export default function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const t = useTranslations()
+  const { locale } = useParams();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -283,7 +285,7 @@ export default function ContactPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/products">{t("exploreProducts")}</Link>
+              <Link href={`/${locale}/products`}>{t("exploreProducts")}</Link>
             </Button>
             <Button
               asChild
@@ -291,7 +293,7 @@ export default function ContactPage() {
               variant="outline"
               className="bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary"
             >
-              <a href="mailto:info@nahoragri.com">{t("contactUs")}</a>
+              <Link href={`/${locale}/contact`}>{t("contactUs")}</Link>
             </Button>
           </div>
         </div>

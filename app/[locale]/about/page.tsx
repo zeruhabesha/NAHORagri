@@ -5,9 +5,11 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 
 export default function AboutPage() {
   const t = useTranslations();
+  const { locale } = useParams();
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -20,7 +22,7 @@ export default function AboutPage() {
                 {t("aTrustedExporter")}
               </p>
               <Button asChild>
-                <Link href="/contact">{t("contactUs")}</Link>
+                <Link href={`/${locale}/contact`}>{t("contactUs")}</Link>
               </Button>
             </div>
             <div className="relative aspect-video rounded-lg overflow-hidden">
@@ -52,11 +54,21 @@ export default function AboutPage() {
               <p className="text-muted-foreground mb-6">
                 {t("toDeliverExceptional")}
               </p>
+              <ul className="list-disc pl-6 text-muted-foreground mb-6 text-sm">
+                <li>We leverage innovative technologies and best practices to ensure our agro and engineering solutions are both effective and sustainable.</li>
+                <li>Our team is dedicated to understanding each client’s unique requirements, delivering personalized service and measurable results.</li>
+                <li>We prioritize environmental stewardship and long-term partnerships, aiming to create value for our clients and communities.</li>
+              </ul>
 
               <h3 className="text-2xl font-bold mb-4">{t("vision")}</h3>
               <p className="text-muted-foreground">
                 {t("toBecomeEast")}
               </p>
+              <ul className="list-disc pl-6 text-muted-foreground mt-4 text-sm">
+                <li>We aspire to set the benchmark for quality, reliability, and innovation in the agricultural export and engineering sectors.</li>
+                <li>Our vision includes expanding our global reach while maintaining strong roots in local communities and sustainable practices.</li>
+                <li>We are committed to continuous improvement, investing in our people, technology, and partnerships to drive growth and positive impact.</li>
+              </ul>
             </div>
             <div className="order-1 md:order-2 relative aspect-square rounded-lg overflow-hidden">
               <Image
@@ -246,7 +258,7 @@ export default function AboutPage() {
             {t("contactTeamToday")}
           </p>
           <Button asChild size="lg" variant="secondary">
-            <Link href="/contact">{t("getInTouch")}</Link>
+            <Link href={`/${locale}/contact`}>{t("getInTouch")}</Link>
           </Button>
         </div>
       </section>

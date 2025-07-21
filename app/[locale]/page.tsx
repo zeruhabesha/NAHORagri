@@ -8,21 +8,52 @@ import { ChatWidget } from "@/components/ChatWidget";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Home() {
     const t = useTranslations();
     const { locale } = useParams();
+
+    // Add this state and image array
+    const heroImages = [
+      "/coffee.jpg",
+      "/yirgacheffe.jpg",
+      "/about.jpg",
+      "/vision.jpg"
+    ];
+    const [currentImage, setCurrentImage] = useState(0);
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentImage((prev) => (prev + 1) % heroImages.length);
+      }, 4000); // Change image every 4 seconds
+      return () => clearInterval(interval);
+    }, [heroImages.length]);
+
     return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 hero-pattern">
-        <div className="container flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">
+      <section className="relative py-32 md:py-48 hero-pattern overflow-hidden">
+        {/* Sliding background images */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          {heroImages.map((img, idx) => (
+            <img
+              key={img}
+              src={img}
+              alt=""
+              className={`object-cover w-full h-full absolute inset-0 transition-opacity duration-1000 ${idx === currentImage ? "opacity-100" : "opacity-0"}`}
+              style={{ transitionProperty: "opacity" }}
+            />
+          ))}
+          <div className="absolute inset-0 bg-black" style={{ opacity: 0.5 }} />
+        </div>
+        <div className="container flex flex-col items-center text-center relative z-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6 text-white">
             {t("empoweringAgriculture")}
             <br />
             {t("enablingGrowth")}
           </h1>
-          <p className="max-w-[700px] text-lg text-muted-foreground mb-8">
+          <p className="max-w-[700px] text-lg mb-8 text-white">
             {t("basedInAddis")} <span className="font-semibold">NAHORagri</span> {t("isYourPremierGlobalSource")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -34,7 +65,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent z-10" />
       </section>
 
       {/* Quote Section */}
@@ -74,7 +105,7 @@ export default function Home() {
               </CardContent>
               <CardFooter>
                 <Button asChild variant="ghost" className="p-0 h-auto">
-                  <Link href="/products#coffee" className="flex items-center text-primary">
+                  <Link href={`/${locale}/products#coffee`}>
                     {t("learnMore")} <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
                 </Button>
@@ -94,7 +125,7 @@ export default function Home() {
               </CardContent>
               <CardFooter>
                 <Button asChild variant="ghost" className="p-0 h-auto">
-                  <Link href="/products#sesame" className="flex items-center text-primary">
+                  <Link href={`/${locale}/products#sesame`}>
                     {t("learnMore")} <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
                 </Button>
@@ -114,7 +145,7 @@ export default function Home() {
               </CardContent>
               <CardFooter>
                 <Button asChild variant="ghost" className="p-0 h-auto">
-                  <Link href="/products#avocado" className="flex items-center text-primary">
+                  <Link href={`/${locale}/products#avocado`}>
                     {t("learnMore")} <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
                 </Button>
@@ -134,7 +165,7 @@ export default function Home() {
               </CardContent>
               <CardFooter>
                 <Button asChild variant="ghost" className="p-0 h-auto">
-                  <Link href="/products#engineering" className="flex items-center text-primary">
+                  <Link href={`/${locale}/products#engineering`}>
                     {t("learnMore")} <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
                 </Button>
@@ -184,14 +215,25 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">{t("readyToPartner")}</h2>
+      <section className="py-16 md:py-24 bg-primary text-primary-foreground relative overflow-hidden">
+        {/* Coffee pattern background */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <img
+            src="/coffee.jpg"
+            alt="Coffee pattern background"
+            className="object-cover w-full h-full opacity-40"
+          />
+          <div className="absolute inset-0 bg-black" style={{ opacity: 0.3 }} />
+        </div>
+        <div className="container text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">
+            {t("readyToPartner")}
+          </h2>
           <p className="max-w-[700px] mx-auto mb-8 text-primary-foreground/90">
             {t("contactTeamTodayDiscuss")}
           </p>
           <Button asChild size="lg" variant="secondary">
-            <Link href="/contact">{t("getInTouch")}</Link>
+            <Link href={`/${locale}/contact`}>{t("getInTouch")}</Link>
           </Button>
         </div>
       </section>

@@ -9,6 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { useTranslations } from "next-intl"
+import { useParams } from "next/navigation";
 
 function CoffeeOriginsGrid() {
   const t = useTranslations();
@@ -182,6 +183,7 @@ function SesameProductsGrid() {
 export default function ProductsPage() {
   const [activeTab, setActiveTab] = useState("coffee")
   const t = useTranslations()
+  const { locale } = useParams();
 
   return (
     <div className="flex flex-col">
@@ -229,7 +231,7 @@ export default function ProductsPage() {
                     {t("weExportHighGrade")}
                   </p>
                   <Button asChild>
-                    <Link href="/contact">{t("requestQuote")}</Link>
+                    <Link href={`/${locale}/contact`}>{t("requestQuote")}</Link>
                   </Button>
                 </div>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
@@ -305,7 +307,7 @@ export default function ProductsPage() {
                     <li><span className="font-semibold">{t("exportDestinations")}:</span> Asia, Middle East, Europe, North America</li>
                   </ul>
                   <Button asChild>
-                    <Link href="/contact">{t("requestQuote")}</Link>
+                    <Link href={`/${locale}/contact`}>{t("requestQuote")}</Link>
                   </Button>
                 </div>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
@@ -328,7 +330,7 @@ export default function ProductsPage() {
                     {t("organicallyGrownAvocados")}
                   </p>
                   <Button asChild>
-                    <Link href="/contact">{t("requestQuote")}</Link>
+                    <Link href={`/${locale}/contact`}>{t("requestQuote")}</Link>
                   </Button>
                 </div>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
@@ -453,7 +455,7 @@ export default function ProductsPage() {
                     {t("nahoragriPartners")}
                   </p>
                   <Button asChild>
-                    <Link href="/contact">{t("requestConsultation")}</Link>
+                    <Link href={`/${locale}/contact`}>{t("requestConsultation")}</Link>
                   </Button>
                 </div>
                 <div className="relative aspect-video rounded-lg overflow-hidden">
@@ -584,7 +586,7 @@ export default function ProductsPage() {
                 </Card>
               </div>
 
-              <div className="mt-12 text-center">
+              {/* <div className="mt-12 text-center">
                 <h3 className="text-2xl font-bold mb-4">{t("ourEngineeringPartners")}</h3>
                 <p className="text-muted-foreground max-w-3xl mx-auto mb-8">
                   {t("weCollaborateWith")}
@@ -626,8 +628,8 @@ export default function ProductsPage() {
                       className="object-contain"
                     />
                   </div>
-                </div>
-              </div>
+                </div> */}
+              {/* </div> */}
             </TabsContent>
           </Tabs>
         </div>
@@ -712,7 +714,7 @@ export default function ProductsPage() {
             {t("contactTeamTodayQuote")}
           </p>
           <Button asChild size="lg" variant="secondary">
-            <Link href="/contact">{t("requestQuote")}</Link>
+            <Link href={`/${locale}/contact`}>{t("requestQuote")}</Link>
           </Button>
         </div>
       </section>

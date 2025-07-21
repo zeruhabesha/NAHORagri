@@ -13,58 +13,100 @@ import { useParams } from "next/navigation";
 
 function CoffeeOriginsGrid() {
   const t = useTranslations();
-  const [selected, setSelected] = useState<typeof coffeeOrigins[0] | null>(null)
+  const [selected, setSelected] = useState(null as null | any);
   const coffeeOrigins = [
     {
       key: "lekempti",
       name: t("coffeeOrigin.lekempti.name"),
       image: "/LEKEMPTI.jpg",
       short: t("coffeeOrigin.lekempti.short"),
-      detail: t("coffeeOrigin.lekempti.detail")
+      detail: t("coffeeOrigin.lekempti.detail"),
+      region: t("coffeeOrigin.lekempti.region"),
+      altitude: t("coffeeOrigin.lekempti.altitude"),
+      harvest: t("coffeeOrigin.lekempti.harvest"),
+      processing: t("coffeeOrigin.lekempti.processing"),
+      cupProfile: t("coffeeOrigin.lekempti.cupProfile").split("|"),
+      additional: t("coffeeOrigin.lekempti.additional")
     },
     {
       key: "djimmah",
       name: t("coffeeOrigin.djimmah.name"),
       image: "/djimmah.webp",
       short: t("coffeeOrigin.djimmah.short"),
-      detail: t("coffeeOrigin.djimmah.detail")
+      detail: t("coffeeOrigin.djimmah.detail"),
+      region: t("coffeeOrigin.djimmah.region"),
+      altitude: t("coffeeOrigin.djimmah.altitude"),
+      harvest: t("coffeeOrigin.djimmah.harvest"),
+      processing: t("coffeeOrigin.djimmah.processing"),
+      cupProfile: t("coffeeOrigin.djimmah.cupProfile").split("|"),
+      additional: t("coffeeOrigin.djimmah.additional")
     },
     {
       key: "yirgacheffe",
       name: t("coffeeOrigin.yirgacheffe.name"),
       image: "/yirgacheffe.jpg",
       short: t("coffeeOrigin.yirgacheffe.short"),
-      detail: t("coffeeOrigin.yirgacheffe.detail")
+      detail: t("coffeeOrigin.yirgacheffe.detail"),
+      region: t("coffeeOrigin.yirgacheffe.region"),
+      altitude: t("coffeeOrigin.yirgacheffe.altitude"),
+      harvest: t("coffeeOrigin.yirgacheffe.harvest"),
+      processing: t("coffeeOrigin.yirgacheffe.processing"),
+      cupProfile: t("coffeeOrigin.yirgacheffe.cupProfile").split("|"),
+      additional: t("coffeeOrigin.yirgacheffe.additional")
     },
     {
       key: "sidamo",
       name: t("coffeeOrigin.sidamo.name"),
       image: "/sidamo.jpg",
       short: t("coffeeOrigin.sidamo.short"),
-      detail: t("coffeeOrigin.sidamo.detail")
+      detail: t("coffeeOrigin.sidamo.detail"),
+      region: t("coffeeOrigin.sidamo.region"),
+      altitude: t("coffeeOrigin.sidamo.altitude"),
+      harvest: t("coffeeOrigin.sidamo.harvest"),
+      processing: t("coffeeOrigin.sidamo.processing"),
+      cupProfile: t("coffeeOrigin.sidamo.cupProfile").split("|"),
+      additional: t("coffeeOrigin.sidamo.additional")
     },
     {
       key: "guji",
       name: t("coffeeOrigin.guji.name"),
       image: "/guji.jpg",
       short: t("coffeeOrigin.guji.short"),
-      detail: t("coffeeOrigin.guji.detail")
+      detail: t("coffeeOrigin.guji.detail"),
+      region: t("coffeeOrigin.guji.region"),
+      altitude: t("coffeeOrigin.guji.altitude"),
+      harvest: t("coffeeOrigin.guji.harvest"),
+      processing: t("coffeeOrigin.guji.processing"),
+      cupProfile: t("coffeeOrigin.guji.cupProfile").split("|"),
+      additional: t("coffeeOrigin.guji.additional")
     },
     {
       key: "limmu",
       name: t("coffeeOrigin.limmu.name"),
       image: "/limmu.jpg",
       short: t("coffeeOrigin.limmu.short"),
-      detail: t("coffeeOrigin.limmu.detail")
+      detail: t("coffeeOrigin.limmu.detail"),
+      region: t("coffeeOrigin.limmu.region"),
+      altitude: t("coffeeOrigin.limmu.altitude"),
+      harvest: t("coffeeOrigin.limmu.harvest"),
+      processing: t("coffeeOrigin.limmu.processing"),
+      cupProfile: t("coffeeOrigin.limmu.cupProfile").split("|"),
+      additional: t("coffeeOrigin.limmu.additional")
     },
     {
       key: "benchmaji",
       name: t("coffeeOrigin.benchmaji.name"),
       image: "/benchmaji.jpg",
       short: t("coffeeOrigin.benchmaji.short"),
-      detail: t("coffeeOrigin.benchmaji.detail")
+      detail: t("coffeeOrigin.benchmaji.detail"),
+      region: t("coffeeOrigin.benchmaji.region"),
+      altitude: t("coffeeOrigin.benchmaji.altitude"),
+      harvest: t("coffeeOrigin.benchmaji.harvest"),
+      processing: t("coffeeOrigin.benchmaji.processing"),
+      cupProfile: t("coffeeOrigin.benchmaji.cupProfile").split("|"),
+      additional: t("coffeeOrigin.benchmaji.additional")
     }
-  ]
+  ];
   return (
     <>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -88,7 +130,7 @@ function CoffeeOriginsGrid() {
       {/* Modal */}
       {selected && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-          <div className="bg-background rounded-xl shadow-2xl max-w-md w-full p-8 relative">
+          <div className="bg-background rounded-xl shadow-2xl max-w-2xl w-full p-8 relative max-h-[90vh] overflow-y-auto">
             <button className="absolute top-3 right-3 text-muted-foreground hover:text-primary" onClick={() => setSelected(null)} aria-label="Close">
               ×
             </button>
@@ -98,6 +140,49 @@ function CoffeeOriginsGrid() {
               </div>
               <h3 className="text-2xl font-bold mb-2">{selected.name}</h3>
               <p className="text-muted-foreground text-center mb-4">{selected.detail}</p>
+
+              {/* General Ethiopia Coffee Export Note */}
+              <div className="w-full text-left text-xs mb-4 p-3 bg-muted/50 rounded">
+                <div className="mb-1 font-semibold">{t("coffeeModal.exportProductsTitle")}</div>
+                <ul className="list-disc pl-6">
+                  {(t.raw("coffeeModal.exportProductsList") as string[]).map((item: string, idx: number) => <li key={idx}>{item}</li>)}
+                </ul>
+                <div className="mt-2">{t("coffeeModal.exportProductsNote")}</div>
+              </div>
+
+              {/* Region Details */}
+              <div className="w-full text-left text-sm mt-2">
+                <div className="mb-2"><span className="font-semibold">{t("coffeeOrigin.lekempti.region")}:</span> {selected.region}</div>
+                <div className="mb-2"><span className="font-semibold">{t("coffeeOrigin.lekempti.altitude")}:</span> {selected.altitude}</div>
+                <div className="mb-2"><span className="font-semibold">{t("coffeeOrigin.lekempti.harvest")}:</span> {selected.harvest}</div>
+                <div className="mb-2"><span className="font-semibold">{t("coffeeOrigin.lekempti.processing")}:</span> {selected.processing}</div>
+                <div className="mb-2"><span className="font-semibold">{t("coffeeOrigin.lekempti.cupProfile")}:</span>
+                  <ul className="list-disc pl-6">
+                    {selected.cupProfile.map((item: string, idx: number) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="mb-2"><span className="font-semibold">{t("coffeeOrigin.lekempti.additional")}:</span> {selected.additional}</div>
+              </div>
+
+              {/* Grades, Moisture, Flavor, Pricing, etc. */}
+              <div className="w-full text-left text-xs mt-4 p-3 bg-muted/40 rounded">
+                <div className="font-semibold mb-1">{t("coffeeModal.gradesTitle")}</div>
+                <ul className="list-disc pl-6 mb-2">
+                  {(t.raw("coffeeModal.gradesList") as string[]).map((item: string, idx: number) => <li key={idx}>{item}</li>)}
+                </ul>
+                <div className="mb-1"><span className="font-semibold">{t("coffeeModal.moistureContent")}:</span> {t("coffeeModal.moistureContent")}</div>
+                <div className="mb-1"><span className="font-semibold">{t("coffeeOrigin.lekempti.flavorProfiles")}:</span> {t("coffeeOrigin.lekempti.flavorProfiles")}</div>
+                <div className="font-semibold mb-1">{t("coffeeModal.packagingTitle")}</div>
+                <ul className="list-disc pl-6 mb-2">
+                  {(t.raw("coffeeModal.packagingList") as string[]).map((item: string, idx: number) => <li key={idx}>{item}</li>)}
+                </ul>
+                <div className="font-semibold mb-1">{t("coffeeModal.destinationsTitle")}</div>
+                <ul className="list-disc pl-6">
+                  {(t.raw("coffeeModal.destinationsList") as string[]).map((item: string, idx: number) => <li key={idx}>{item}</li>)}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -162,7 +247,7 @@ function SesameProductsGrid() {
       {/* Modal */}
       {selected && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-          <div className="bg-background rounded-xl shadow-2xl max-w-md w-full p-8 relative">
+          <div className="bg-background rounded-xl shadow-2xl max-w-md w-full p-8 relative max-h-[90vh] overflow-y-auto">
             <button className="absolute top-3 right-3 text-muted-foreground hover:text-primary" onClick={() => setSelected(null)} aria-label="Close">
               ×
             </button>

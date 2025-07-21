@@ -291,38 +291,87 @@
   "coffeeOrigin": {
     "lekempti": {
       "name": "LEKEMPTI",
-      "short": "Acidité douce, équilibre et saveurs fruitées délicates. Cultivé à Welega, à l'ouest d'Addis-Abeba.",
-      "detail": "Le café Lekempti est apprécié pour son acidité douce, son équilibre et ses saveurs fruitées délicates. Il est principalement cultivé à Welega, une province à l'ouest d'Addis-Abeba, où le café est principalement cultivé en forêt ou en semi-forêt et traité naturellement."
+      "short": "Acidité douce, équilibre et délicates saveurs fruitées. Cultivé à Welega, à l'ouest d'Addis-Abeba.",
+      "detail": "Le café Lekempti est apprécié pour son acidité plus douce, son équilibre et ses délicates saveurs fruitées. Il est principalement cultivé à Welega, une province à l'ouest d'Addis-Abeba, où le café est principalement cultivé en forêt ou en semi-forêt et naturellement traité.",
+      "region": "Wollega, Ouest de l'Éthiopie",
+      "altitude": "1 700 – 2 200 m d'altitude",
+      "harvest": "Novembre – Février",
+      "processing": "Naturel (séchage au soleil)",
+      "cupProfile": "Acidité douce|Tasse équilibrée|Notes de fruits délicates",
+      "additional": "Cultivé principalement en forêt et en semi-forêt, le café Nekemte est apprécié pour sa douceur subtile et sa faible acidité – une excellente option pour une tasse douce mais savoureuse.",
+      "flavorProfiles": "Épices & agrumes, acidité vive, corps riche"
     },
     "djimmah": {
       "name": "DJIMMAH",
-      "short": "Café excellent, faible en acidité, des régions d'Illubabor et Kaffa.",
-      "detail": "Un excellent café éthiopien à faible acidité. Le café Djimmah est cultivé dans les régions d'Illubabor et Kaffa en Éthiopie à des altitudes dans la plus grande zone de captage du pays."
+      "short": "Excellent café à faible acidité des régions d'Illubabor et Kaffa.",
+      "detail": "Un excellent café éthiopien à faible acidité. Le café Djimmah est cultivé dans les régions d'Illubabor et Kaffa en Éthiopie à des altitudes dans la plus grande zone de captage du pays.",
+      "region": "Illubabor & Kaffa, Sud-Ouest de l'Éthiopie",
+      "altitude": "950 – 2 300 m d'altitude",
+      "harvest": "Octobre – Janvier",
+      "processing": "Principalement naturel",
+      "cupProfile": "Saveur fruitée et vineuse|Faible acidité|Notes de chocolat noir",
+      "additional": "Cultivé dans l'une des plus grandes zones de captage d'Éthiopie, le café Jimma est connu pour son corps audacieux et ses agréables nuances terreuses.",
+      "flavorProfiles": "Épices & agrumes, acidité vive, corps riche"
     },
     "yirgacheffe": {
       "name": "YIRGACHEFFE",
       "short": "Saveur fruitée de renommée mondiale du sud de l'Éthiopie.",
-      "detail": "Le café éthiopien Yirgacheffe est considéré comme l'un des meilleurs cafés au monde. Il provient de la ville de Yirgacheffe dans le sud de l'Éthiopie. La variété, le terroir et la méthode de traitement créent un café biologique à la saveur fruitée recherchée par de nombreux amateurs de café."
+      "detail": "Le café éthiopien Yirgacheffe est considéré comme l'un des meilleurs cafés au monde. Il provient de la ville de Yirgacheffe, dans le sud de l'Éthiopie. La variété, le terroir et la méthode de traitement créent un café biologique à la saveur fruitée très recherchée.",
+      "region": "Zone de Gedeo, Sud de l'Éthiopie",
+      "altitude": "1 700 – 2 200 m d'altitude",
+      "harvest": "Octobre – Janvier",
+      "processing": "Lavé et naturel",
+      "cupProfile": "Lavé : floral, groseille rouge, cerise, vanille ; juteux et citronné avec une étincelle vineuse|Naturel : fruité, pêche, myrtille ; douceur et acidité vive",
+      "additional": "Considéré comme l'un des meilleurs cafés de spécialité au monde, la saveur du Yirgacheffe est fortement influencée par la variété, le terroir et les méthodes de traitement traditionnelles.",
+      "flavorProfiles": "Épices & agrumes, acidité vive, corps riche"
     },
     "sidamo": {
       "name": "SIDAMO",
       "short": "Notes d'agrumes, de citronnelle, d'ananas, de myrtille.",
-      "detail": "Le café Sidamo est connu pour ses notes d'agrumes, de citronnelle, d'ananas et de myrtille. Cultivé dans le sud de l'Éthiopie, il est prisé pour sa saveur complexe et son acidité vive."
+      "detail": "Le café Sidamo est connu pour ses notes d'agrumes, de citronnelle, d'ananas et de myrtille. Cultivé dans le sud de l'Éthiopie, il est prisé pour sa saveur complexe et son acidité vive.",
+      "region": "Sud de l'Éthiopie",
+      "altitude": "1 700 – 2 000 m d'altitude",
+      "harvest": "Octobre – Janvier",
+      "processing": "Lavé et naturel",
+      "cupProfile": "Lavé : vif, agrumes, citronnelle, type thé|Naturel : fruit de la passion, ananas, myrtille",
+      "additional": "Le café Sidamo est un incontournable pour les torréfacteurs pour son corps riche, sa saveur complexe et sa finale vive et vibrante.",
+      "flavorProfiles": "Épices & agrumes, acidité vive, corps riche"
     },
     "guji": {
       "name": "GUJI",
       "short": "Jasmin, citron, miel, baies, corps soyeux.",
-      "detail": "Le café Guji offre des notes de jasmin, de citron, de miel et de baies avec un corps soyeux. Il est cultivé dans la zone de Guji, une région réputée pour son microclimat unique et ses sols riches."
+      "detail": "Le café Guji offre des notes de jasmin, citron, miel et baies avec un corps soyeux. Il est cultivé dans la zone de Guji, une région célébrée pour son microclimat unique et ses sols riches.",
+      "region": "Oromia, Sud de l'Éthiopie",
+      "altitude": "1 950 – 2 300 m d'altitude",
+      "harvest": "Octobre – Décembre",
+      "processing": "Lavé et naturel",
+      "cupProfile": "Lavé : floral, jasmin, citron, thé aux herbes|Naturel : miel, fruits secs, baies, corps soyeux",
+      "additional": "Cultivé dans un sol acide et un microclimat unique, le café Guji est connu pour son profil exceptionnellement fruité et vibrant.",
+      "flavorProfiles": "Épices & agrumes, acidité vive, corps riche"
     },
     "limmu": {
       "name": "LIMMU",
-      "short": "Fruité, vineux, doux avec une faible acidité.",
-      "detail": "Le café Limmu est fruité, vineux et doux avec une faible acidité. Il est cultivé dans les hauts plateaux de l'ouest de l'Éthiopie et est connu pour sa tasse propre et son agréable arrière-goût."
+      "short": "Fruité, vineux, doux avec faible acidité.",
+      "detail": "Le café Limmu est fruité, vineux et doux avec une faible acidité. Il est cultivé dans les hautes terres de l'ouest de l'Éthiopie et est connu pour sa tasse propre et sa finale agréable.",
+      "region": "Sud-Ouest de l'Éthiopie (Oromia)",
+      "altitude": "950 – 2 300 m d'altitude",
+      "harvest": "Octobre – Décembre",
+      "processing": "Principalement lavé",
+      "cupProfile": "Saveur fruitée et vineuse|Faible acidité|Notes de chocolat noir",
+      "additional": "Le café Limmu a tendance à avoir une acidité plus modérée que le Sidamo ou le Yirgacheffe, ce qui le rend équilibré et doux.",
+      "flavorProfiles": "Épices & agrumes, acidité vive, corps riche"
     },
     "benchmaji": {
       "name": "BENCHMAJI",
       "short": "Complexité exotique, audacieuse, épicée et vineuse.",
-      "detail": "Le café Benchmaji est exotique, audacieux et offre une complexité épicée et vineuse. Il est produit dans la zone de Bench Maji, une région aux altitudes et climats diversifiés."
+      "detail": "Le café Benchmaji est exotique, audacieux et offre une complexité épicée et vineuse. Il est produit dans la zone de Bench Maji, une région aux altitudes et climats divers.",
+      "region": "Sud-Ouest de l'Éthiopie",
+      "altitude": "1 700 – 2 000+ m d'altitude",
+      "harvest": "Octobre – Janvier",
+      "processing": "Naturel (souvent café de forêt sauvage)",
+      "cupProfile": "Fruité et épicé|Audacieux, vineux|Très complexe",
+      "additional": "Cette région produit certains des cafés les plus exotiques et complexes d'Éthiopie, souvent issus d'arbres anciens et sauvages.",
+      "flavorProfiles": "Épices & agrumes, acidité vive, corps riche"
     }
   },
   "chatbot": {
@@ -405,5 +454,42 @@
     "sending": "Envoi...",
     "sendWhatsApp": "Envoyer via WhatsApp",
     "errorRequired": "Veuillez remplir tous les champs obligatoires."
+  },
+  "coffeeModal": {
+    "exportProductsTitle": "Produits d'exportation éthiopiens :",
+    "exportProductsList": [
+      "Grains de café (Arabica vert, lavé & naturel)",
+      "Graines de sésame (Humera, Wollega)",
+      "Avocat (brut, pâte, huile)"
+    ],
+    "exportProductsNote": "Saveurs et arômes uniques issus des différents terroirs éthiopiens. Variétés de café naturellement traitées et biologiques disponibles.",
+    "gradesTitle": "Grades & Traitement :",
+    "gradesList": [
+      "Grade 1 & 2 – Lavé & Naturel",
+      "Grade 4 – Lavé & Naturel"
+    ],
+    "moistureContent": "Teneur en humidité : 10–12%",
+    "packagingTitle": "Emballage & Logistique :",
+    "packagingList": [
+      "Type de sac : sacs de jute",
+      "Poids par sac : 60 kg",
+      "Commande minimum : 1 FCL (conteneur complet)",
+      "Délai : 4–6 semaines après confirmation",
+      "Port de chargement : Port de Djibouti, Djibouti",
+      "Port de destination : Dubaï (ou spécifié)",
+      "Incoterms : FOB Djibouti",
+      "Méthode de paiement : LC confirmé à vue à 100%",
+      "Devise : USD",
+      "Validité du devis : jusqu'au 26 avril 2025",
+      "Échantillons : disponibles sur demande"
+    ],
+    "destinationsTitle": "Destinations d'exportation :",
+    "destinationsList": [
+      "Europe : Allemagne, Italie, Royaume-Uni, Belgique, Espagne, France, etc.",
+      "Asie : Corée du Sud, Inde, Japon, Chine, Taïwan",
+      "Amérique du Nord : États-Unis, Canada",
+      "Moyen-Orient : Émirats arabes unis, Arabie saoudite",
+      "Afrique : Afrique du Sud"
+    ]
   }
 }

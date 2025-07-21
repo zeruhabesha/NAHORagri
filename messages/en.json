@@ -292,37 +292,86 @@
     "lekempti": {
       "name": "LEKEMPTI",
       "short": "Smooth acidity, balance, and delicate fruit flavors. Cultivated in Welega, west of Addis Ababa.",
-      "detail": "Lekempti coffee is appreciated for its smoother acidity, balance, and delicate fruit flavors. It is primarily cultivated in Welega, a province to the west of Addis Ababa, where coffee is mostly grown in forest or semi-forest land and naturally processed."
+      "detail": "Lekempti coffee is appreciated for its smoother acidity, balance, and delicate fruit flavors. It is primarily cultivated in Welega, a province to the west of Addis Ababa, where coffee is mostly grown in forest or semi-forest land and naturally processed.",
+      "region": "Wollega, Western Ethiopia",
+      "altitude": "1,700 – 2,200 m.a.s.l",
+      "harvest": "November – February",
+      "processing": "Natural (sun-dried)",
+      "cupProfile": "Smooth acidity|Balanced cup|Delicate fruit notes",
+      "additional": "Grown mostly in forest and semi-forest areas, Nekemte coffee is appreciated for its subtle sweetness and low acidity—an excellent option for a mild yet flavorful cup.",
+      "flavorProfiles": "Spices & citrus, crisp acidity, rich body"
     },
     "djimmah": {
       "name": "DJIMMAH",
       "short": "Excellent, low-acid coffee from Illubabor and Kaffa regions.",
-      "detail": "An excellent, low-acid Ethiopian coffee. Djimmah coffee is grown in the Illubabor and Kaffa regions of Ethiopia at elevations within the biggest catchment area in Ethiopia."
+      "detail": "An excellent, low-acid Ethiopian coffee. Djimmah coffee is grown in the Illubabor and Kaffa regions of Ethiopia at elevations within the biggest catchment area in Ethiopia.",
+      "region": "Illubabor & Kaffa, Southwestern Ethiopia",
+      "altitude": "950 – 2,300 m.a.s.l",
+      "harvest": "October – January",
+      "processing": "Primarily natural",
+      "cupProfile": "Fruity and winey flavor|Low acidity|Hints of dark chocolate",
+      "additional": "Grown in one of Ethiopia’s largest catchment areas, Jimma coffee is known for its bold body and pleasant earthy undertones.",
+      "flavorProfiles": "Spices & citrus, crisp acidity, rich body"
     },
     "yirgacheffe": {
       "name": "YIRGACHEFFE",
       "short": "World-renowned, fruit-forward flavor from southern Ethiopia.",
-      "detail": "Ethiopian Yirgacheffe coffee is considered one of the best coffees in the world. It comes from the town of Yirgacheffe in southern Ethiopia. The variety, terroir, and processing method create an organic coffee with a fruit-forward flavor that is sought by many coffee lovers."
+      "detail": "Ethiopian Yirgacheffe coffee is considered one of the best coffees in the world. It comes from the town of Yirgacheffe in southern Ethiopia. The variety, terroir, and processing method create an organic coffee with a fruit-forward flavor that is sought by many coffee lovers.",
+      "region": "Gedeo Zone, Southern Ethiopia",
+      "altitude": "1,700 – 2,200 m.a.s.l",
+      "harvest": "October – January",
+      "processing": "Washed and natural",
+      "cupProfile": "Washed: Floral, red currant, cherry, vanilla; Juicy and lemony with winey spark|Natural: Fruity, peach, blueberry; Sweet and bright acidity",
+      "additional": "Considered one of the world’s best specialty coffees, Yirgacheffe's flavor is heavily influenced by variety, terroir, and traditional processing methods.",
+      "flavorProfiles": "Spices & citrus, crisp acidity, rich body"
     },
     "sidamo": {
       "name": "SIDAMO",
       "short": "Citrus, lemongrass, pineapple, blueberry notes.",
-      "detail": "Sidamo coffee is known for its citrus, lemongrass, pineapple, and blueberry notes. Grown in southern Ethiopia, it is prized for its complex flavor and bright acidity."
+      "detail": "Sidamo coffee is known for its citrus, lemongrass, pineapple, and blueberry notes. Grown in southern Ethiopia, it is prized for its complex flavor and bright acidity.",
+      "region": "Southern Ethiopia",
+      "altitude": "1,700 – 2,000 m.a.s.l",
+      "harvest": "October – January",
+      "processing": "Washed and natural",
+      "cupProfile": "Washed: Bright, citrus, lemongrass, tea-like|Natural: Passion fruit, pineapple, blueberry",
+      "additional": "Sidamo coffee is a staple among roasters for its consistently rich body, complex flavor, and bright, vibrant aftertaste.",
+      "flavorProfiles": "Spices & citrus, crisp acidity, rich body"
     },
     "guji": {
       "name": "GUJI",
       "short": "Jasmine, lemon, honey, berry, silky body.",
-      "detail": "Guji coffee offers jasmine, lemon, honey, and berry notes with a silky body. It is grown in the Guji zone, a region celebrated for its unique microclimate and rich soils."
+      "detail": "Guji coffee offers jasmine, lemon, honey, and berry notes with a silky body. It is grown in the Guji zone, a region celebrated for its unique microclimate and rich soils.",
+      "region": "Oromia, Southern Ethiopia",
+      "altitude": "1,950 – 2,300 m.a.s.l",
+      "harvest": "October – December",
+      "processing": "Washed and natural",
+      "cupProfile": "Washed: Floral, jasmine, lemon, herbal tea|Natural: Honey, dried fruits, berry, silky body",
+      "additional": "Grown in acidic soil and a unique microclimate, Guji coffee is known for its exceptionally fruit-forward and vibrant profile.",
+      "flavorProfiles": "Spices & citrus, crisp acidity, rich body"
     },
     "limmu": {
       "name": "LIMMU",
       "short": "Fruity, winey, smooth with low acidity.",
-      "detail": "Limmu coffee is fruity, winey, and smooth with low acidity. It is grown in the western highlands of Ethiopia and is known for its clean cup and pleasant aftertaste."
+      "detail": "Limmu coffee is fruity, winey, and smooth with low acidity. It is grown in the western highlands of Ethiopia and is known for its clean cup and pleasant aftertaste.",
+      "region": "Southwestern Ethiopia (Oromia)",
+      "altitude": "950 – 2,300 m.a.s.l",
+      "harvest": "October – December",
+      "processing": "Mostly washed",
+      "cupProfile": "Fruity, winey flavor|Low acidity|Dark chocolate notes",
+      "additional": "Limmu coffee tends to have more restrained acidity than Sidamo or Yirgacheffe, making it balanced and smooth.",
+      "flavorProfiles": "Spices & citrus, crisp acidity, rich body"
     },
     "benchmaji": {
       "name": "BENCHMAJI",
       "short": "Exotic, bold, spicy and winey complexity.",
-      "detail": "Benchmaji coffee is exotic, bold, and offers spicy and winey complexity. It is produced in the Bench Maji zone, a region with diverse altitudes and climates."
+      "detail": "Benchmaji coffee is exotic, bold, and offers spicy and winey complexity. It is produced in the Bench Maji zone, a region with diverse altitudes and climates.",
+      "region": "Southwestern Ethiopia",
+      "altitude": "1,700 – 2,000+ m.a.s.l",
+      "harvest": "October – January",
+      "processing": "Natural (often wild forest coffee)",
+      "cupProfile": "Fruity and spicy|Bold, winey|Highly complex",
+      "additional": "This region produces some of the most exotic and complex coffees in Ethiopia, often from wild-grown, heirloom trees.",
+      "flavorProfiles": "Spices & citrus, crisp acidity, rich body"
     }
   },
   "blog": "Blog",
@@ -405,5 +454,42 @@
     "sending": "Sending...",
     "sendWhatsApp": "Send via WhatsApp",
     "errorRequired": "Please fill in all required fields."
+  },
+  "coffeeModal": {
+    "exportProductsTitle": "Ethiopian Export Products:",
+    "exportProductsList": [
+      "Coffee beans (green Arabica, washed & natural)",
+      "Sesame seeds (Humera, Wollega)",
+      "Avocado (raw, paste, oil)"
+    ],
+    "exportProductsNote": "Unique flavors and aroma profiles from different Ethiopian terroirs. Naturally processed and organic coffee varieties available.",
+    "gradesTitle": "Grades & Processing:",
+    "gradesList": [
+      "Grade 1 & 2 – Washed & Natural",
+      "Grade 4 – Washed & Natural"
+    ],
+    "moistureContent": "Moisture Content: 10–12%",
+    "packagingTitle": "Packaging & Logistics:",
+    "packagingList": [
+      "Bag Type: Jute Bags",
+      "Weight per Bag: 60 kg",
+      "Minimum Order: 1 FCL (Full Container Load)",
+      "Lead Time: 4–6 weeks after confirmation",
+      "Port of Loading: Port of Djibouti, Djibouti",
+      "Port of Destination: Dubai (or as specified)",
+      "Incoterms: FOB Djibouti",
+      "Payment Method: 100% Confirmed LC at Sight",
+      "Currency: USD",
+      "Quotation Validity: Until April 26, 2025",
+      "Samples: Available upon request"
+    ],
+    "destinationsTitle": "Export Destinations:",
+    "destinationsList": [
+      "Europe: Germany, Italy, UK, Belgium, Spain, France, etc.",
+      "Asia: South Korea, India, Japan, China, Taiwan",
+      "North America: USA, Canada",
+      "Middle East: UAE, Saudi Arabia",
+      "Africa: South Africa"
+    ]
   }
 }

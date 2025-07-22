@@ -273,14 +273,19 @@
   "humeraSesame": {
     "name": "胡梅拉芝麻",
     "short": "胡梅拉芝麻是一种优质品种，原产于埃塞俄比亚西北部的胡梅拉地区。以其高品质和在国际市场上的高需求而闻名。",
-    "detail": "胡梅拉芝麻因其纯度、颜色和含油量高而备受推崇。广泛用于国际市场的芝麻酱和油提取。"
+    "detail": "胡梅拉芝麻因其纯度、颜色和含油量高而备受推崇。广泛用于国际市场的芝麻酱和油提取。",
+    "purity": "纯度：99% 以上",
+    "admixture": "杂质：1% 以下",
+    "moisture": "水分：8% 以下",
+    "ffa": "游离脂肪酸：5% 以下",
+    "oilContent": "含油量：2% 以上"
   },
   "isYourPremierGlobalSource": "是您获取高质量农产品和工程解决方案的全球首选供应商。",
   "europe": "欧洲",
-  "europeCountries": "德国、意大利、英国、比利时、西班牙、法国",
+  "europeCountries": "德国、意大利、英国、比利时、西班牙、瑞士、法国、俄罗斯",
   "asia": "亚洲",
-  "asiaCountries": "韩国、印度、日本、中国、台湾",
-  "northAmerica": "北美",
+  "asiaCountries": "韩国、印度、日本、台湾、中国",
+  "northAmerica": "北美洲",
   "northAmericaCountries": "美国、加拿大",
   "middleEast": "中东",
   "middleEastCountries": "阿联酋、沙特阿拉伯",
@@ -290,16 +295,16 @@
   "originsFlavors": "产地与风味",
   "coffeeOrigin": {
     "lekempti": {
-      "name": "LEKEMPTI",
-      "short": "顺滑的酸度、平衡和细腻的水果风味。产自亚的斯亚贝巴以西的Welega。",
-      "detail": "Lekempti咖啡以其顺滑的酸度、平衡和细腻的水果风味而著称。主要种植于埃塞俄比亚西部的Welega省，咖啡多在森林或半森林地带自然处理。",
-      "region": "沃莱加，埃塞俄比亚西部",
-      "altitude": "1,700 – 2,200 米",
-      "harvest": "11月 – 2月",
-      "processing": "自然（日晒）",
-      "cupProfile": "顺滑的酸度|平衡的口感|细腻的水果风味",
-      "additional": "主要生长在森林和半森林地区，Nekemte咖啡以其微妙的甜味和低酸度而受到青睐，是温和而有风味的绝佳选择。",
-      "flavorProfiles": "香料和柑橘，清脆酸度，醇厚口感"
+      "name": "莱肯普提",
+      "short": "莱肯普提咖啡简介...",
+      "detail": "莱肯普提咖啡详细介绍...",
+      "region": "产区",
+      "altitude": "海拔",
+      "harvest": "收获季节",
+      "processing": "处理方式",
+      "cupProfile": "花香|果味|巧克力",
+      "additional": "其他信息",
+      "flavorProfiles": "风味描述"
     },
     "djimmah": {
       "name": "DJIMMAH",
@@ -373,6 +378,47 @@
       "additional": "该地区生产一些埃塞俄比亚最具异国情调和复杂性的咖啡，通常来自野生的古老树种。",
       "flavorProfiles": "香料和柑橘，清脆酸度，醇厚口感"
     }
+  },
+  "sesameProducts": {
+    "humera": {
+      "name": "胡梅拉芝麻",
+      "short": "胡梅拉芝麻是一种优质品种，原产于埃塞俄比亚西北部的胡梅拉地区。以其高品质和在国际市场上的高需求而闻名。",
+      "detail": "胡梅拉芝麻因其纯度、颜色和含油量高而备受推崇。广泛用于国际市场的芝麻酱和油提取。",
+      "purity": "纯度：99% 以上",
+      "admixture": "杂质：1% 以下",
+      "moisture": "水分：8% 以下",
+      "ffa": "游离脂肪酸：5% 以下",
+      "oilContent": "含油量：2% 以上"
+    },
+    "wollega": {
+      "name": "沃莱加芝麻",
+      "short": "沃莱加芝麻是来自沃莱加地区的棕色品种，以高油含量和食用油生产适用性而著称。",
+      "detail": "沃莱加芝麻因其纯度、颜色和高油含量而受到赞赏。用于油生产和国际出口。",
+      "purity": "纯度：99% 以上",
+      "admixture": "杂质：1% 以下",
+      "moisture": "水分：8% 以下",
+      "ffa": "游离脂肪酸：5% 以下",
+      "oilContent": "含油量：2% 以上"
+    },
+    "hulled": {
+      "name": "去壳芝麻",
+      "short": "去壳芝麻在加工过程中去除了外壳。",
+      "detail": "去壳芝麻因其细腻口感和温和风味，适合烘焙、糖果和芝麻酱生产。"
+    },
+    "tahini": {
+      "name": "芝麻酱",
+      "short": "芝麻酱是由烘烤去壳芝麻和芝麻油制成的奶油状酱料。",
+      "detail": "芝麻酱广泛用于中东美食，因其浓郁坚果风味和顺滑口感而受到喜爱。"
+    },
+    "exportDestinationsTitle": "出口目的地",
+    "exportDestinationsList": [
+      "欧洲：德国、意大利、英国、比利时、西班牙、瑞士、法国、俄罗斯",
+      "亚洲：韩国、印度、日本、台湾、中国",
+      "北美：美国、加拿大",
+      "中东：阿联酋、沙特阿拉伯",
+      "非洲：南非"
+    ],
+    "companyNote": "为什么选择NAHOR？我们确保可持续和道德采购，严格的质量控制，以及快速高效的交付。我们的芝麻种子经过加工和包装，符合国际标准。"
   },
   "chatbot": {
     "title": "NAHORagri 聊天机器人",
@@ -455,40 +501,15 @@
     "errorRequired": "请填写所有必填字段。"
   },
   "coffeeModal": {
-    "exportProductsTitle": "埃塞俄比亚出口产品：",
-    "exportProductsList": [
-      "咖啡豆（绿阿拉比卡，水洗和自然处理）",
-      "芝麻（Humera, Wollega）",
-      "牛油果（原果、酱、油）"
-    ],
-    "exportProductsNote": "来自不同埃塞俄比亚风土的独特风味和香气。可提供自然处理和有机咖啡品种。",
-    "gradesTitle": "等级与处理：",
-    "gradesList": [
-      "1级和2级 – 水洗和自然处理",
-      "4级 – 水洗和自然处理"
-    ],
-    "moistureContent": "含水量：10–12%",
-    "packagingTitle": "包装与物流：",
-    "packagingList": [
-      "袋型：黄麻袋",
-      "每袋重量：60公斤",
-      "最小订单：1个整箱（FCL）",
-      "交货期：确认后4–6周",
-      "装运港：吉布提港，吉布提",
-      "目的港：迪拜（或指定）",
-      "贸易术语：FOB吉布提",
-      "付款方式：100%即期保兑信用证",
-      "货币：美元",
-      "报价有效期：至2025年4月26日",
-      "样品：可按需提供"
-    ],
-    "destinationsTitle": "出口目的地：",
-    "destinationsList": [
-      "欧洲：德国、意大利、英国、比利时、西班牙、法国等",
-      "亚洲：韩国、印度、日本、中国、台湾",
-      "北美：美国、加拿大",
-      "中东：阿联酋、沙特阿拉伯",
-      "非洲：南非"
-    ]
+    "exportProductsTitle": "出口产品",
+    "exportProductsList": ["产品A", "产品B"],
+    "exportProductsNote": "出口说明",
+    "gradesTitle": "等级",
+    "gradesList": ["等级1", "等级2"],
+    "moistureContent": "含水量",
+    "packagingTitle": "包装",
+    "packagingList": ["包装A", "包装B"],
+    "destinationsTitle": "目的地",
+    "destinationsList": ["目的地A", "目的地B"]
   }
 }

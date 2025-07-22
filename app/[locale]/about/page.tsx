@@ -72,7 +72,7 @@ export default function AboutPage() {
             </div>
             <div className="order-1 md:order-2 relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/vision.jpg?height=600&width=600"
+                src="/humera.jpg?height=600&width=600"
                 alt="Ethiopian Coffee Farm"
                 fill
                 className="object-cover"
@@ -249,19 +249,31 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">
-            {t("readyToExperience")}
-          </h2>
-          <p className="max-w-[700px] mx-auto mb-8 text-primary-foreground/90">
-            {t("contactTeamToday")}
-          </p>
-          <Button asChild size="lg" variant="secondary">
-            <Link href={`/${locale}/contact`}>{t("getInTouch")}</Link>
-          </Button>
-        </div>
-      </section>
+      <section className="py-16 md:py-24 bg-primary text-primary-foreground relative overflow-hidden">
+  {/* Background image and overlay */}
+  <div className="absolute inset-0 w-full h-full z-0">
+    <img
+      src="/pattern.jpg" // Replace with your image path
+      alt="Background pattern"
+      className="object-cover w-full h-full opacity-40"
+    />
+    <div className="absolute inset-0 bg-black" style={{ opacity: 0.3 }} />
+  </div>
+
+  {/* Content */}
+  <div className="container text-center relative z-10">
+    <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">
+      {t("readyToExperience")}
+    </h2>
+    <p className="max-w-[700px] mx-auto mb-8 text-primary-foreground/90">
+      {t("contactTeamToday")}
+    </p>
+    <Button asChild size="lg" variant="secondary">
+      <Link href={`/${locale}/contact`}>{t("getInTouch")}</Link>
+    </Button>
+  </div>
+</section>
+
     </div>
   )
 }

@@ -83,7 +83,7 @@ export default function BlogPage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative py-24 md:py-32 bg-primary text-primary-foreground overflow-hidden">
-        <Image src="/coffee.jpg" alt="Coffee Blog" fill className="object-cover object-center absolute inset-0 opacity-30 pointer-events-none" />
+        <Image src="/pattern.jpg" alt="Coffee Blog" fill className="object-cover object-center absolute inset-0 opacity-30 pointer-events-none" />
         <div className="container relative z-10 flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-4 drop-shadow-lg">
             {t("coffeeBlog.title")}

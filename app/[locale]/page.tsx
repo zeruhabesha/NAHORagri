@@ -16,10 +16,9 @@ export default function Home() {
 
     // Add this state and image array
     const heroImages = [
-      "/coffee.jpg",
-      "/yirgacheffe.jpg",
-      "/about.jpg",
-      "/vision.jpg"
+      "/seedss.jpg",
+      "/cups.jpg",
+      "/tractor-plowing.jpg"
     ];
     const [currentImage, setCurrentImage] = useState(0);
 
@@ -219,7 +218,7 @@ export default function Home() {
         {/* Coffee pattern background */}
         <div className="absolute inset-0 w-full h-full z-0">
           <img
-            src="/coffee.jpg"
+            src="/pattern.jpg"
             alt="Coffee pattern background"
             className="object-cover w-full h-full opacity-40"
           />

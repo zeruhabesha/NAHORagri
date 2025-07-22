@@ -374,6 +374,47 @@
       "flavorProfiles": "Spices & citrus, crisp acidity, rich body"
     }
   },
+"sesameProducts": {
+  "humera": {
+    "name": "Humera Sesame",
+    "short": "Humera sesame is a premium variety from northwest Ethiopia, known for its whitish color and high demand worldwide.",
+    "detail": "Humera sesame is valued for its purity, color, and oil content. Widely used for tahini and oil extraction in international markets.",
+    "purity": "Purity: 99% min",
+    "admixture": "Admixture: 1% max",
+    "moisture": "Moisture: 8% max",
+    "ffa": "FFA: 5% max",
+    "oilContent": "Oil Content: 2% min"
+  },
+  "wollega": {
+    "name": "Wollega Sesame",
+    "short": "Wollega sesame is a brownish variety from Wollega region, prized for its high oil content and suitability for edible oil production.",
+    "detail": "Wollega sesame is appreciated for its purity, color, and high oil content. Used for oil production and international export.",
+    "purity": "Purity: 98.5% min",
+    "admixture": "Admixture: 1.5% max",
+    "moisture": "Moisture: 8% max",
+    "ffa": "FFA: 1.5% max",
+    "oilContent": "Oil Content: 48–50% min"
+  },
+  "hulled": {
+    "name": "Hulled Sesame",
+    "short": "Hulled sesame seeds have their outer shell removed during processing.",
+    "detail": "Hulled sesame seeds are ideal for bakery, confectionery, and tahini production due to their smooth texture and mild flavor."
+  },
+  "tahini": {
+    "name": "Tahini",
+    "short": "Tahini is a creamy paste made from toasted ground hulled sesame seeds and sesame oil.",
+    "detail": "Tahini is widely used in Middle Eastern cuisine, valued for its rich, nutty flavor and smooth texture."
+  },
+  "exportDestinationsTitle": "Export Destinations",
+  "exportDestinationsList": [
+    "Europe: Germany, Italy, UK, Belgium, Spain, Switzerland, France, Russia",
+    "Asia: South Korea, India, Japan, Taiwan, China",
+    "North America: USA, Canada",
+    "Middle East: UAE, Saudi Arabia",
+    "Africa: South Africa"
+  ],
+  "companyNote": "Why NAHOR? We ensure sustainable & ethical sourcing, rigorous quality control, and fast, cost-effective delivery. Our sesame seeds are processed and packed to meet international standards."
+},
   "blog": "Blog",
   "chatbot": {
     "title": "NAHORagri Chatbot",

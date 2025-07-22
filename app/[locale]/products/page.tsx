@@ -224,6 +224,8 @@ const sesameProducts = [
 
 function SesameProductsGrid() {
   const [selected, setSelected] = useState<typeof sesameProducts[0] | null>(null)
+  const t = useTranslations();
+
   return (
     <>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -232,15 +234,17 @@ function SesameProductsGrid() {
             key={product.key}
             className="flex flex-col items-center bg-muted/40 rounded-xl p-6 shadow hover:shadow-lg transition cursor-pointer focus:outline-none"
             onClick={() => setSelected(product)}
-            aria-label={`View details for ${product.name}`}
+            aria-label={`View details for ${t(`sesameProducts.${product.key}.name`)}`}
             type="button"
           >
             <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-background shadow">
-              <img src={product.image} alt={product.name} className="object-cover w-full h-full" />
+              <img src={product.image} alt={t(`sesameProducts.${product.key}.name`)} className="object-cover w-full h-full" />
             </div>
-            <h3 className="text-lg font-bold mb-2">{product.name}</h3>
-            <p className="text-muted-foreground mb-4 text-sm text-center">{product.short}</p>
-            <span className="inline-block px-5 py-2 rounded-full bg-background border text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-colors">Read More</span>
+            <h3 className="text-lg font-bold mb-2">{t(`sesameProducts.${product.key}.name`)}</h3>
+            <p className="text-muted-foreground mb-4 text-sm text-center">{t(`sesameProducts.${product.key}.short`)}</p>
+            <span className="inline-block px-5 py-2 rounded-full bg-background border text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-colors">
+              {t("readMore")}
+            </span>
           </button>
         ))}
       </div>
@@ -252,11 +256,43 @@ function SesameProductsGrid() {
               ×
             </button>
             <div className="flex flex-col items-center">
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-background shadow">
-                <img src={selected.image} alt={selected.name} className="object-cover w-full h-full" />
+              <div className="w-40 h-40 rounded-full overflow-hidden mb-4 border-4 border-background shadow">
+                <img src={selected.image} alt={t(`sesameProducts.${selected.key}.name`)} className="object-cover w-full h-full" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">{selected.name}</h3>
-              <p className="text-muted-foreground text-center mb-4">{selected.detail}</p>
+              <h2 className="text-2xl font-bold mb-2">{t(`sesameProducts.${selected.key}.name`)}</h2>
+              <p className="text-muted-foreground mb-4 text-center">{t(`sesameProducts.${selected.key}.detail`)}</p>
+              {/* Add product details based on company profile */}
+              {selected.key === "humera" && (
+                <ul className="text-sm mb-4 space-y-1 text-left">
+                  <li><strong>{t("sesameProducts.humera.purity")}</strong></li>
+                  <li><strong>{t("sesameProducts.humera.admixture")}</strong></li>
+                  <li><strong>{t("sesameProducts.humera.moisture")}</strong></li>
+                  <li><strong>{t("sesameProducts.humera.ffa")}</strong></li>
+                  <li><strong>{t("sesameProducts.humera.oilContent")}</strong></li>
+                </ul>
+              )}
+              {selected.key === "wollega" && (
+                <ul className="text-sm mb-4 space-y-1 text-left">
+                  <li><strong>{t("sesameProducts.wollega.purity")}</strong></li>
+                  <li><strong>{t("sesameProducts.wollega.admixture")}</strong></li>
+                  <li><strong>{t("sesameProducts.wollega.moisture")}</strong></li>
+                  <li><strong>{t("sesameProducts.wollega.ffa")}</strong></li>
+                  <li><strong>{t("sesameProducts.wollega.oilContent")}</strong></li>
+                </ul>
+              )}
+              {/* Export destinations */}
+              <div className="mb-4">
+                <h4 className="font-semibold mb-1">{t("sesameProducts.exportDestinationsTitle")}</h4>
+                <ul className="list-disc pl-5 text-xs text-muted-foreground">
+                  {t.raw("sesameProducts.exportDestinationsList").map((dest: string, idx: number) => (
+                    <li key={idx}>{dest}</li>
+                  ))}
+                </ul>
+              </div>
+              {/* Company note */}
+              <div className="bg-muted/50 rounded p-3 text-xs text-center mb-2">
+                {t("sesameProducts.companyNote")}
+              </div>
             </div>
           </div>
         </div>
@@ -792,8 +828,17 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-        <div className="container text-center">
+      <section className="py-16 md:py-24 bg-primary text-primary-foreground relative overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <img
+            src="/pattern.jpg" // Change to your desired image path
+            alt="Background pattern"
+            className="object-cover w-full h-full opacity-40"
+          />
+          <div className="absolute inset-0 bg-black" style={{ opacity: 0.3 }} />
+        </div>
+        <div className="container text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">{t("readyToOrder")}</h2>
           <p className="max-w-[700px] mx-auto mb-8 text-primary-foreground/90">
             {t("contactTeamTodayQuote")}

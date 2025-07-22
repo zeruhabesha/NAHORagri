@@ -121,10 +121,19 @@ export default function ContactPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-2">+254743933740</p>
-                <p className="text-muted-foreground mb-2">+251911251023</p>
-                <p className="text-muted-foreground">+251909523769</p>
-              </CardContent>
+  <p className="text-muted-foreground mb-2 flex items-center gap-2">
+    <Phone className="w-4 h-4 text-primary" />
+    +254743933740
+  </p>
+  <p className="text-muted-foreground mb-2 flex items-center gap-2">
+    <Phone className="w-4 h-4 text-primary" />
+    +251911251023
+  </p>
+  <p className="text-muted-foreground flex items-center gap-2">
+    <MessageCircle className="w-4 h-4 text-green-500" />
+    +251909523769
+  </p>
+</CardContent>
             </Card>
 
             <Card>
@@ -220,84 +229,85 @@ export default function ContactPage() {
 
       {/* FAQ Section */}
       <section className="py-16 md:py-24 bg-muted">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">{t("frequentlyAskedQuestions")}</h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              {t("findAnswersToCommon")}
+  <div className="container">
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+        {t("frequentlyAskedQuestions")}
+      </h2>
+      <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+        {t("findAnswersToCommon")}
+      </p>
+    </div>
+
+    {/* FAQ Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      {[
+        {
+          title: t("minimumOrderQuantity"),
+          content: t("ourMinimumOrder"),
+        },
+        {
+          title: t("shippingTime"),
+          content: t("shippingTimesVary"),
+        },
+        {
+          title: t("samples"),
+          content: t("yesWeProvide"),
+        },
+        {
+          title: t("paymentMethods"),
+          content: t("wePrimarilyWork"),
+        },
+      ].map((faq, idx) => (
+        <Card
+          key={idx}
+          className="bg-white dark:bg-background border border-border shadow-sm hover:shadow-md transition-shadow rounded-2xl"
+        >
+          <CardHeader>
+            <CardTitle className="text-xl font-semibold">
+              {faq.title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {faq.content}
             </p>
-          </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card>
-              <CardHeader>
-                <CardTitle>{t("minimumOrderQuantity")}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  {t("ourMinimumOrder")}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>{t("shippingTime")}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  {t("shippingTimesVary")}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>{t("samples")}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  {t("yesWeProvide")}
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>{t("paymentMethods")}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  {t("wePrimarilyWork")}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">{t("readyToPartner")}</h2>
-          <p className="max-w-[700px] mx-auto mb-8 text-primary-foreground/90">
-            {t("contactTeamTodayDiscuss")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary">
-              <Link href={`/${locale}/products`}>{t("exploreProducts")}</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Link href={`/${locale}/contact`}>{t("contactUs")}</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <section className="py-16 md:py-24 bg-primary text-primary-foreground relative overflow-hidden">
+  {/* Background image */}
+  <div className="absolute inset-0 w-full h-full z-0">
+    <img
+      src="/pattern.jpg"
+      alt="Background pattern"
+      className="object-cover w-full h-full opacity-40"
+    />
+    <div className="absolute inset-0 bg-black" style={{ opacity: 0.3 }} />
+  </div>
+
+  {/* Content */}
+  <div className="container text-center relative z-10">
+    <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">
+      {t("readyToPartner")}
+    </h2>
+    <p className="max-w-[700px] mx-auto mb-8 text-primary-foreground/90">
+      {t("contactTeamTodayDiscuss")}
+    </p>
+    <Button asChild size="lg" variant="secondary">
+      <Link href={`/${locale}/contact`}>{t("getInTouch")}</Link>
+    </Button>
+  </div>
+</section>
+
+
     </div>
   )
 }

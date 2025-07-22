@@ -123,7 +123,7 @@ export default function ContactPage() {
               <CardContent>
   <p className="text-muted-foreground mb-2 flex items-center gap-2">
     <Phone className="w-4 h-4 text-primary" />
-    +254743933740
+    +251909523769
   </p>
   <p className="text-muted-foreground mb-2 flex items-center gap-2">
     <Phone className="w-4 h-4 text-primary" />
@@ -131,7 +131,7 @@ export default function ContactPage() {
   </p>
   <p className="text-muted-foreground flex items-center gap-2">
     <MessageCircle className="w-4 h-4 text-green-500" />
-    +251909523769
+    +254743933740
   </p>
 </CardContent>
             </Card>

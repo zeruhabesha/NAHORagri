@@ -44,7 +44,7 @@ export default function BlogPage() {
       title: t("coffeeBlog.sustainability.title"),
       description: t("coffeeBlog.sustainability.description"),
       excerpt: t("coffeeBlog.sustainability.excerpt"),
-      image: "/sustainability.jpg",
+      image: "/sustainability.png",
       link: `/blog/sustainability`,
       author: t("coffeeBlog.sustainability.author"),
       date: t("coffeeBlog.sustainability.date"),

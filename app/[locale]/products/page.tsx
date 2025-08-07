@@ -757,7 +757,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Packaging & Logistics */}
-      <section className="py-16 md:py-24 bg-muted">
+{/*       <section className="py-16 md:py-24 bg-muted">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">{t("packagingLogistics")}</h2>
@@ -825,7 +825,7 @@ export default function ProductsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground relative overflow-hidden">
